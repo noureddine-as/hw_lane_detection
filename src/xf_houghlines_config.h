@@ -22,21 +22,22 @@
 #include "common/xf_common.hpp"
 #include "common/xf_utility.hpp"
 #include "imgproc/xf_houghlines.hpp"
-//#include "xf_config_params.h"
+#include "xf_config_params.h"
 
-#define HEIGHT 128
-#define WIDTH 128
+#define HOUGH_THRESHOLD  75
 
 // Set the optimization type:
 #define NPC1 XF_NPPC1
 
 #define RHOSTEP 1
 
-#define THETASTEP 2 // 6.1 format
+// 6.1 format
+#define THETASTEP 2
 
-#define LINESMAX 512
+#define LINESMAX 25
 
-#define DIAGVAL 2203 // 275 //cvRound((sqrt(WIDTH*WIDTH + HEIGHT*HEIGHT)) / RHOSTEP);
+#define DIAGVAL 725
+// 2203 // 275 //cvRound((sqrt(WIDTH*WIDTH + HEIGHT*HEIGHT)) / RHOSTEP);
 
 #define MINTHETA 0
 

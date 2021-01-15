@@ -3,16 +3,17 @@ Platform Name: Xilinx
 XCLBIN File Name: krnl_canny
 INFO: Importing ../krnl_canny.xclbin
 Loading: '../krnl_canny.xclbin'
-before kernel - cannyafter kernel - canny7763.05ms
+before kernel - cannyafter kernel - canny7052.78ms
 before kernel - edge tracing
 before allocate - edge tracing
 
 before kernel call - edge tracing
 
 after kernel call - edge tracing
-after kernel - edge tracing101763ms
+after kernel - edge tracing102439ms
 Minimum error in intensity = 0.000000
  Maximum error in intensity = 255.000000
  Percentage of pixels above error threshold = 0.052643
 No of Pixels with Error = 138
-kernel doneFLOATING POINT Reference code finished >>>> 
+kernel done
+ FLOATING POINT Reference Hough Transform code finished >>>> 

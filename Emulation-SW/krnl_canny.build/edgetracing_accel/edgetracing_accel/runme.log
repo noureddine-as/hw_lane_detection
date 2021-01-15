@@ -10,7 +10,7 @@
 
 source /opt/Xilinx/Vitis/2020.1/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-55-64.ec2.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Jan 15 00:01:54 UTC 2021
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-55-64.ec2.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Jan 15 00:41:55 UTC 2021
 INFO: [HLS 200-10] On os "CentOS Linux release 7.7.1908 (Core)"
 INFO: [HLS 200-10] In directory '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel'
 Sourcing Tcl script 'edgetracing_accel.tcl'
@@ -73,8 +73,8 @@ INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::read(int
 INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::write(int, ap_uint<64>)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
 INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::read(int)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
 INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<0, 512, 512, 8, 2>::write(int, ap_uint<64>)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 115356 ; free virtual = 138415
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 115356 ; free virtual = 138415
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 114095 ; free virtual = 137738
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 114095 ; free virtual = 137738
 INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
 HLS completed successfully
-INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 15 00:02:53 2021...
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 15 00:42:54 2021...

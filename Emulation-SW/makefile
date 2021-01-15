@@ -45,8 +45,8 @@ ALL_MESSAGE_FILES = $(subst .xo,.mdb,$(ALL_KERNEL_OBJS)) $(subst .xclbin,.mdb,$(
 #
 
 HOST_OBJECTS += libs/xf_opencv/ext/xcl2/xcl2.o
-HOST_OBJECTS += src/helper_functions.o
 HOST_OBJECTS += src/xf_canny_tb.o
+HOST_OBJECTS += src/xf_houghlines_accel.o
 
 HOST_EXE = lane_detector_v2
 
@@ -112,11 +112,11 @@ libs/xf_opencv/ext/xcl2/xcl2.o: ../libs/xf_opencv/ext/xcl2/xcl2.cpp ../libs/xf_o
 	-@mkdir -p $(@D)
 	$(HOST_CXX) $(CXXFLAGS) -o "$@" "$<"
 
-src/helper_functions.o: ../src/helper_functions.cpp ../src/helper_functions.h
+src/xf_canny_tb.o: ../src/xf_canny_tb.cpp ../libs/xf_opencv/L1/include/common/xf_headers.hpp ../src/xf_canny_config.h ../src/xf_houghlines_config.h ../libs/xf_opencv/ext/xcl2/xcl2.hpp
 	-@mkdir -p $(@D)
 	$(HOST_CXX) $(CXXFLAGS) -o "$@" "$<"
 
-src/xf_canny_tb.o: ../src/xf_canny_tb.cpp ../libs/xf_opencv/L1/include/common/xf_headers.hpp ../src/xf_canny_config.h ../libs/xf_opencv/ext/xcl2/xcl2.hpp ../src/helper_functions.h
+src/xf_houghlines_accel.o: ../src/xf_houghlines_accel.cpp ../src/xf_houghlines_config.h
 	-@mkdir -p $(@D)
 	$(HOST_CXX) $(CXXFLAGS) -o "$@" "$<"
 

@@ -19826,7 +19826,7 @@ void EdgeTracing(xf::cv::Mat<SRC_T, ROWS, COLS, NPC_SRC>& _src, xf::cv::Mat<DST_
 # 27 "/home/centos/labs/lane_detector_v2/src/xf_canny_config.h" 2
 # 1 "/home/centos/labs/lane_detector_v2/src/xf_config_params.h" 1
 # 28 "/home/centos/labs/lane_detector_v2/src/xf_canny_config.h" 2
-# 46 "/home/centos/labs/lane_detector_v2/src/xf_canny_config.h"
+# 48 "/home/centos/labs/lane_detector_v2/src/xf_canny_config.h"
 void canny_accel(xf::cv::Mat<XF_8UC1, 512, 512, XF_NPPC1>& _src,
                  xf::cv::Mat<XF_2UC1, 512, 512, XF_NPPC32>& _dst1,
                  xf::cv::Mat<XF_8UC1, 512, 512, XF_NPPC8>& _dst2,

@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Jan 15 00:02:56 2021",
- "timestampMillis": "1610668976064",
+ "dateTimestamp": "Fri Jan 15 00:42:57 2021",
+ "timestampMillis": "1610671377357",
  "buildStep": {
-  "cmdId": "2e1cefbb-2bd4-44c5-aa23-d9be388ace7c",
+  "cmdId": "e0c94904-fa18-4c95-9a16-6fe9c4c9ef77",
   "name": "v++",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/link.steps.log",
   "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --link --config common-config.cfg --config krnl_canny-link.cfg -okrnl_canny.xclbin krnl_canny.build/canny_accel.xo krnl_canny.build/edgetracing_accel.xo ",
@@ -59,10 +59,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:02:56 2021",
- "timestampMillis": "1610668976065",
+ "dateTimestamp": "Fri Jan 15 00:42:57 2021",
+ "timestampMillis": "1610671377357",
  "status": {
-  "cmdId": "2e1cefbb-2bd4-44c5-aa23-d9be388ace7c",
+  "cmdId": "e0c94904-fa18-4c95-9a16-6fe9c4c9ef77",
   "state": "CS_RUNNING"
  }
 }
@@ -70,8 +70,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Jan 15 00:03:10 2021",
- "timestampMillis": "1610668990952",
+ "dateTimestamp": "Fri Jan 15 00:43:12 2021",
+ "timestampMillis": "1610671392013",
  "buildSummary": {
   "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
   "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
@@ -130,10 +130,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:10 2021",
- "timestampMillis": "1610668990961",
+ "dateTimestamp": "Fri Jan 15 00:43:12 2021",
+ "timestampMillis": "1610671392020",
  "buildStep": {
-  "cmdId": "0d2b0f83-efdd-48e9-a092-a0aaa6393719",
+  "cmdId": "d5331ab4-df0f-480f-b87c-fb8ea6dd54ec",
   "name": "regiongen",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_regiongen.log",
   "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/../runtime/bin/regiongen_new -v -m /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny.xml -t alg -o xcl_top",
@@ -154,10 +154,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:10 2021",
- "timestampMillis": "1610668990962",
+ "dateTimestamp": "Fri Jan 15 00:43:12 2021",
+ "timestampMillis": "1610671392020",
  "status": {
-  "cmdId": "0d2b0f83-efdd-48e9-a092-a0aaa6393719",
+  "cmdId": "d5331ab4-df0f-480f-b87c-fb8ea6dd54ec",
   "state": "CS_RUNNING"
  }
 }
@@ -165,10 +165,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:12 2021",
- "timestampMillis": "1610668992797",
+ "dateTimestamp": "Fri Jan 15 00:43:13 2021",
+ "timestampMillis": "1610671393860",
  "status": {
-  "cmdId": "0d2b0f83-efdd-48e9-a092-a0aaa6393719",
+  "cmdId": "d5331ab4-df0f-480f-b87c-fb8ea6dd54ec",
   "state": "CS_PASSED"
  }
 }
@@ -176,10 +176,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:12 2021",
- "timestampMillis": "1610668992799",
+ "dateTimestamp": "Fri Jan 15 00:43:13 2021",
+ "timestampMillis": "1610671393862",
  "buildStep": {
-  "cmdId": "3e985fb2-bdc8-432c-bdd5-71e8712d191b",
+  "cmdId": "04002a64-771a-4fdd-8626-301dd8292cc2",
   "name": "gcc",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/edgetracing_accel/edgetracing_accel_kernel_gcc.log",
   "commandLine": "/opt/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis/2020.1/bin/../include -I /opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis/2020.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.1/bin/../common/technology/autopilot/opencl -std=c++11 -g -D __SDA_MEM_MAP__ -I /home/centos/labs/lane_detector_v2/src -I /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I /home/centos/labs/lane_detector_v2/src/build -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/xf_edgetracing_accel.o -MP -MF obj/xf_edgetracing_accel.Cd /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/xo/edgetracing_accel/edgetracing_accel/cpu_sources/xf_edgetracing_accel.cpp -o obj/xf_edgetracing_accel.o",
@@ -227,10 +227,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:12 2021",
- "timestampMillis": "1610668992800",
+ "dateTimestamp": "Fri Jan 15 00:43:13 2021",
+ "timestampMillis": "1610671393863",
  "status": {
-  "cmdId": "3e985fb2-bdc8-432c-bdd5-71e8712d191b",
+  "cmdId": "04002a64-771a-4fdd-8626-301dd8292cc2",
   "state": "CS_RUNNING"
  }
 }
@@ -238,10 +238,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:15 2021",
- "timestampMillis": "1610668995640",
+ "dateTimestamp": "Fri Jan 15 00:43:16 2021",
+ "timestampMillis": "1610671396881",
  "status": {
-  "cmdId": "3e985fb2-bdc8-432c-bdd5-71e8712d191b",
+  "cmdId": "04002a64-771a-4fdd-8626-301dd8292cc2",
   "state": "CS_PASSED"
  }
 }
@@ -249,10 +249,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:15 2021",
- "timestampMillis": "1610668995641",
+ "dateTimestamp": "Fri Jan 15 00:43:16 2021",
+ "timestampMillis": "1610671396882",
  "buildStep": {
-  "cmdId": "beaedd78-ea2e-48e1-89a1-45c5c6953675",
+  "cmdId": "19f6308e-d9e5-4e17-b540-aa0cdb8e1e20",
   "name": "ar",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/edgetracing_accel/edgetracing_accel_ar.log",
   "commandLine": "/opt/Xilinx/Vivado/2020.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/edgetracing_accel/edgetracing_accel.csim_cu.a /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/edgetracing_accel/obj/xf_edgetracing_accel.o",
@@ -269,10 +269,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:15 2021",
- "timestampMillis": "1610668995642",
+ "dateTimestamp": "Fri Jan 15 00:43:16 2021",
+ "timestampMillis": "1610671396883",
  "status": {
-  "cmdId": "beaedd78-ea2e-48e1-89a1-45c5c6953675",
+  "cmdId": "19f6308e-d9e5-4e17-b540-aa0cdb8e1e20",
   "state": "CS_RUNNING"
  }
 }
@@ -280,10 +280,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:15 2021",
- "timestampMillis": "1610668995653",
+ "dateTimestamp": "Fri Jan 15 00:43:16 2021",
+ "timestampMillis": "1610671396893",
  "status": {
-  "cmdId": "beaedd78-ea2e-48e1-89a1-45c5c6953675",
+  "cmdId": "19f6308e-d9e5-4e17-b540-aa0cdb8e1e20",
   "state": "CS_PASSED"
  }
 }
@@ -291,10 +291,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:15 2021",
- "timestampMillis": "1610668995654",
+ "dateTimestamp": "Fri Jan 15 00:43:16 2021",
+ "timestampMillis": "1610671396895",
  "buildStep": {
-  "cmdId": "40550230-8fc9-45a7-96c7-51e972259db7",
+  "cmdId": "a41db804-9231-4ae8-ab1c-e91e1e224c77",
   "name": "gcc",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/canny_accel/canny_accel_kernel_gcc.log",
   "commandLine": "/opt/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis/2020.1/bin/../include -I /opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis/2020.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.1/bin/../common/technology/autopilot/opencl -std=c++11 -g -I /home/centos/labs/lane_detector_v2/src -I /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I /home/centos/labs/lane_detector_v2/src/build -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/xf_canny_accel.o -MP -MF obj/xf_canny_accel.Cd /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/xo/canny_accel/canny_accel/cpu_sources/xf_canny_accel.cpp -o obj/xf_canny_accel.o",
@@ -340,10 +340,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:15 2021",
- "timestampMillis": "1610668995655",
+ "dateTimestamp": "Fri Jan 15 00:43:16 2021",
+ "timestampMillis": "1610671396895",
  "status": {
-  "cmdId": "40550230-8fc9-45a7-96c7-51e972259db7",
+  "cmdId": "a41db804-9231-4ae8-ab1c-e91e1e224c77",
   "state": "CS_RUNNING"
  }
 }
@@ -351,10 +351,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:20 2021",
- "timestampMillis": "1610669000454",
+ "dateTimestamp": "Fri Jan 15 00:43:21 2021",
+ "timestampMillis": "1610671401608",
  "status": {
-  "cmdId": "40550230-8fc9-45a7-96c7-51e972259db7",
+  "cmdId": "a41db804-9231-4ae8-ab1c-e91e1e224c77",
   "state": "CS_PASSED"
  }
 }
@@ -362,10 +362,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:20 2021",
- "timestampMillis": "1610669000455",
+ "dateTimestamp": "Fri Jan 15 00:43:21 2021",
+ "timestampMillis": "1610671401608",
  "buildStep": {
-  "cmdId": "b88b095e-4b58-419d-8cef-9b738033a128",
+  "cmdId": "c956c1dd-7a50-462d-9094-cc1dbba4273a",
   "name": "ar",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/canny_accel/canny_accel_ar.log",
   "commandLine": "/opt/Xilinx/Vivado/2020.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/canny_accel/canny_accel.csim_cu.a /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/canny_accel/obj/xf_canny_accel.o",
@@ -382,10 +382,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:20 2021",
- "timestampMillis": "1610669000456",
+ "dateTimestamp": "Fri Jan 15 00:43:21 2021",
+ "timestampMillis": "1610671401609",
  "status": {
-  "cmdId": "b88b095e-4b58-419d-8cef-9b738033a128",
+  "cmdId": "c956c1dd-7a50-462d-9094-cc1dbba4273a",
   "state": "CS_RUNNING"
  }
 }
@@ -393,10 +393,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:20 2021",
- "timestampMillis": "1610669000476",
+ "dateTimestamp": "Fri Jan 15 00:43:21 2021",
+ "timestampMillis": "1610671401629",
  "status": {
-  "cmdId": "b88b095e-4b58-419d-8cef-9b738033a128",
+  "cmdId": "c956c1dd-7a50-462d-9094-cc1dbba4273a",
   "state": "CS_PASSED"
  }
 }
@@ -404,10 +404,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:20 2021",
- "timestampMillis": "1610669000477",
+ "dateTimestamp": "Fri Jan 15 00:43:21 2021",
+ "timestampMillis": "1610671401630",
  "buildStep": {
-  "cmdId": "7df79549-9e18-471a-b25e-9a17680fd52e",
+  "cmdId": "a648e14e-eb12-4da4-8b28-64c5b359b4d6",
   "name": "g++",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_xcl_top_gpp.log",
   "commandLine": "/opt/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/g++ -I . -I /opt/Xilinx/Vitis/2020.1/bin/../include -I /opt/Xilinx/Vitis/2020.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.1/bin/../data/emulation/include -I /opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++11 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
@@ -448,10 +448,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:20 2021",
- "timestampMillis": "1610669000477",
+ "dateTimestamp": "Fri Jan 15 00:43:21 2021",
+ "timestampMillis": "1610671401631",
  "status": {
-  "cmdId": "7df79549-9e18-471a-b25e-9a17680fd52e",
+  "cmdId": "a648e14e-eb12-4da4-8b28-64c5b359b4d6",
   "state": "CS_RUNNING"
  }
 }
@@ -459,10 +459,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002012",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403249",
  "status": {
-  "cmdId": "7df79549-9e18-471a-b25e-9a17680fd52e",
+  "cmdId": "a648e14e-eb12-4da4-8b28-64c5b359b4d6",
   "state": "CS_PASSED"
  }
 }
@@ -470,10 +470,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002013",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403250",
  "buildStep": {
-  "cmdId": "5c0ee6c2-290f-47d3-a29d-e0e1a43bb437",
+  "cmdId": "a39199cb-b71e-4d1d-a8da-ced56057dd6d",
   "name": "g++",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_top_gpp.log",
   "commandLine": "/opt/Xilinx/Vivado/2020.1/tps/lnx64/gcc-6.2.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++11 -Wall -shared -Wl,--whole-archive,-soname,krnl_canny.so -o krnl_canny.so edgetracing_accel/edgetracing_accel.csim_cu.a canny_accel/canny_accel.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /opt/Xilinx/Vitis/2020.1/bin/../lib/lnx64.o -lhlsmathsim -L /opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/fpo_v7_0 -L /opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /opt/Xilinx/Vitis/2020.1/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /opt/Xilinx/Vitis/2020.1/bin/../lnx64/lib/csim -lhlsmc++-GCC46",
@@ -519,10 +519,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002013",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403251",
  "status": {
-  "cmdId": "5c0ee6c2-290f-47d3-a29d-e0e1a43bb437",
+  "cmdId": "a39199cb-b71e-4d1d-a8da-ced56057dd6d",
   "state": "CS_RUNNING"
  }
 }
@@ -530,10 +530,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002228",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403470",
  "status": {
-  "cmdId": "5c0ee6c2-290f-47d3-a29d-e0e1a43bb437",
+  "cmdId": "a39199cb-b71e-4d1d-a8da-ced56057dd6d",
   "state": "CS_PASSED"
  }
 }
@@ -541,8 +541,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002229",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403472",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_xml.rtd",
   "name": "",
@@ -554,10 +554,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002232",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403474",
  "buildStep": {
-  "cmdId": "5f711045-b26e-45c2-9b90-90f0018aa5b2",
+  "cmdId": "748038e9-2e07-4c0a-9cf4-ad1d1aa1a7a3",
   "name": "xclbinutil",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_xclbinutil.log",
   "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny.so --force --target sw_emu --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_xml.rtd --add-section BUILD_METADATA:JSON:/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny.xml --add-section DEBUG_DATA:RAW:/dev/null --output /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.xclbin",
@@ -586,10 +586,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002233",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403475",
  "status": {
-  "cmdId": "5f711045-b26e-45c2-9b90-90f0018aa5b2",
+  "cmdId": "748038e9-2e07-4c0a-9cf4-ad1d1aa1a7a3",
   "state": "CS_RUNNING"
  }
 }
@@ -597,10 +597,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002320",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403564",
  "status": {
-  "cmdId": "5f711045-b26e-45c2-9b90-90f0018aa5b2",
+  "cmdId": "748038e9-2e07-4c0a-9cf4-ad1d1aa1a7a3",
   "state": "CS_PASSED"
  }
 }
@@ -608,10 +608,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002321",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403565",
  "buildStep": {
-  "cmdId": "cb663d01-4b86-4468-be0f-7d6a6cca18cb",
+  "cmdId": "c91db10c-ab1a-4f1b-addf-f85dc554ee7d",
   "name": "xclbinutil",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.xclbin.info",
   "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/xclbinutil --quiet --info --input /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.xclbin",
@@ -629,10 +629,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002322",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403566",
  "status": {
-  "cmdId": "cb663d01-4b86-4468-be0f-7d6a6cca18cb",
+  "cmdId": "c91db10c-ab1a-4f1b-addf-f85dc554ee7d",
   "state": "CS_RUNNING"
  }
 }
@@ -640,10 +640,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002437",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403683",
  "status": {
-  "cmdId": "cb663d01-4b86-4468-be0f-7d6a6cca18cb",
+  "cmdId": "c91db10c-ab1a-4f1b-addf-f85dc554ee7d",
   "state": "CS_PASSED"
  }
 }
@@ -651,8 +651,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002440",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403687",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.html",
   "name": "",
@@ -664,8 +664,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002441",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403687",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.pb",
   "name": "",
@@ -677,8 +677,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002442",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403688",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/logs/optraceViewer.html",
   "name": "",
@@ -690,10 +690,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:03:22 2021",
- "timestampMillis": "1610669002442",
+ "dateTimestamp": "Fri Jan 15 00:43:23 2021",
+ "timestampMillis": "1610671403689",
  "status": {
-  "cmdId": "2e1cefbb-2bd4-44c5-aa23-d9be388ace7c",
+  "cmdId": "e0c94904-fa18-4c95-9a16-6fe9c4c9ef77",
   "state": "CS_PASSED"
  }
 }

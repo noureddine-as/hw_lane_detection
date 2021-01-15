@@ -1,6 +1,5 @@
-2021-01-15T00:10:09.28999500255-00:10:09 **** Incremental Build of configuration Emulation-SW for project lane_detector_v2 ****
+2021-01-15T00:46:14.3809200255-00:46:14 **** Incremental Build of configuration Emulation-SW for project lane_detector_v2 ****
 000-make -j8 incremental 
-000-g++ -std=c++0x -D__SDSVHLS__ -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/ext/xcl2 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/labs/lane_detector_v2/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2020.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/helper_functions.o" "../src/helper_functions.cpp"
 000-g++ -std=c++0x -D__SDSVHLS__ -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/ext/xcl2 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/labs/lane_detector_v2/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2020.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_canny_tb.o" "../src/xf_canny_tb.cpp"
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
 000-                 from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:20,
@@ -208,7 +207,7 @@
 000-         #pragma HLS DATAFLOW
 000- ^
 000-In file included from ../src/xf_canny_config.h:24:0,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp37-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
 000-     #pragma HLS INLINE
 000- ^
@@ -289,7 +288,7 @@
 000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:31:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2949-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2949:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
 000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
 000- ^
@@ -349,7 +348,7 @@
 000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:33:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp25-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:25:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
 000-     #pragma HLS INLINE
 000- ^
@@ -529,7 +528,7 @@
 000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:34:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp41-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:41:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
 000-     #pragma HLS INLINE
 000- ^
@@ -577,7 +576,7 @@
 000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:35:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp74-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:74:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
 000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
 000- ^
@@ -598,7 +597,7 @@
 000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:36:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp142-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:142:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
 000-     #pragma HLS INLINE
 000- ^
@@ -658,7 +657,7 @@
 000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:36:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp452-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:452:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
 000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
 000- ^
@@ -681,7 +680,7 @@
 000-     #pragma HLS inline
 000- ^
 000-In file included from ../src/xf_canny_config.h:25:0,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp58-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:58:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
 000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
 000- ^
@@ -779,7 +778,7 @@
 000-     #pragma HLS INLINE OFF
 000- ^
 000-In file included from ../src/xf_canny_config.h:26:0,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp37-1-1"MIN" redefined [enabled by default]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:37:0: warning: "MIN" redefined [enabled by default]
 000- #define MIN(x, y) (((x) < (y)) ? (x) : (y))
 000- ^
@@ -791,7 +790,7 @@
 000- #  define MIN(a,b)  ((a) > (b) ? (b) : (a))
 000- ^
 000-In file included from ../src/xf_canny_config.h:26:0,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp54-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:54:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
 000-     #pragma HLS inline
 000- ^
@@ -921,9 +920,155 @@
 000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp454-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:454:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
 000-     #pragma HLS INLINE
 000- ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_canny_tb.cpp:20:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp131-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:131:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp157-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:157:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp165-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:165:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=rhoN
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp166-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:166:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp171-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:171:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=AngleN
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp192-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:192:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp193-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:193:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=AngleN
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp208-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:208:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=accval_reg_set1 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp209-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:209:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg1_cos complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp210-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:210:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg1_sin complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp211-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:211:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg1_sin_wire complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp212-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:212:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg2 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp213-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:213:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=sinvals complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp214-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:214:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=cosvals complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp215-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:215:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg3_reg complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp216-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:216:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_prev_set1 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp250-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:250:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp279-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:279:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp287-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:287:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp288-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:288:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp289-1-1ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:289:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+000-             #pragma HLS DEPENDENCE  array inter false
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp290-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:290:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp302-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:302:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp384-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:384:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp406-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:406:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp411-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:411:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp443-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:443:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=cond2 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp444-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:444:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=vote_at_rho_theta complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp445-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:445:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=vote_at_rho_theta_reg complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp446-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:446:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=four_conds complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp447-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:447:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=four_conds_reg complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp448-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:448:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=four_conds_reg_2 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp454-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:454:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp466-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:466:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp472-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:472:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp485-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:485:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp505-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:505:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp515-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:515:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp562-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:562:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=local_max complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp563-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:563:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=local_max_rho complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp569-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:569:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp580-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:580:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=linesMax
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp585-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:585:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp595-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:595:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp641-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:641:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp664-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:664:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=accum complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp665-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:665:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-     #pragma HLS RESOURCE variable=accum core=RAM_T2P_BRAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp715-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:715:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:31:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: In function 'char xf::cv::IdentifySignBits(ap_int<24>)':
 000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3113-1-1label 'signBitsLoop' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3113:1: warning: label 'signBitsLoop' defined but not used [-Wunused-label]
 000- signBitsLoop:
@@ -941,7 +1086,7 @@
 000-     int N1 = 0, N2 = 0;
 000-                 ^
 000-../src/xf_canny_tb.cpp: In function 'int main(int, char**)':
-000/lane_detector_v2/src/xf_canny_tb.cpp48-1-1unused variable 'img_path' [-Wunused-variable]1-../src/xf_canny_tb.cpp:48:10: warning: unused variable 'img_path' [-Wunused-variable]
+000/lane_detector_v2/src/xf_canny_tb.cpp49-1-1unused variable 'img_path' [-Wunused-variable]1-../src/xf_canny_tb.cpp:49:10: warning: unused variable 'img_path' [-Wunused-variable]
 000-     char img_path[1000];
 000-          ^
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_headers.hpp:28:0,
@@ -951,38 +1096,38 @@
 000-                 int v_tmp;
 000-                     ^
 000-../src/xf_canny_tb.cpp: In function 'void AverageGaussian(cv::Mat&, cv::Mat&)':
-000/lane_detector_v2/src/xf_canny_tb.cpp300-1-1'b2' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:300:21: warning: 'b2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp306-1-1'b2' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:306:21: warning: 'b2' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     NMSTYPE b0, b1, b2;
 000-                     ^
-000/lane_detector_v2/src/xf_canny_tb.cpp290-1-1'b1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:290:18: warning: 'b1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp296-1-1'b1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:296:18: warning: 'b1' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     int g1 = (t1 + b1 + m0 + m2) << 1;
 000-                  ^
-000/lane_detector_v2/src/xf_canny_tb.cpp300-1-1'b1' was declared here0-../src/xf_canny_tb.cpp:300:17: note: 'b1' was declared here
+000/lane_detector_v2/src/xf_canny_tb.cpp306-1-1'b1' was declared here0-../src/xf_canny_tb.cpp:306:17: note: 'b1' was declared here
 000-     NMSTYPE b0, b1, b2;
 000-                 ^
-000/lane_detector_v2/src/xf_canny_tb.cpp300-1-1'b0' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:300:13: warning: 'b0' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp306-1-1'b0' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:306:13: warning: 'b0' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     NMSTYPE b0, b1, b2;
 000-             ^
-000/lane_detector_v2/src/xf_canny_tb.cpp299-1-1'm2' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:299:21: warning: 'm2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp305-1-1'm2' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:305:21: warning: 'm2' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     NMSTYPE m0, m1, m2;
 000-                     ^
-000/lane_detector_v2/src/xf_canny_tb.cpp291-1-1'm1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:291:17: warning: 'm1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp297-1-1'm1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:297:17: warning: 'm1' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     int g2 = m1 << 2;
 000-                 ^
-000/lane_detector_v2/src/xf_canny_tb.cpp299-1-1'm1' was declared here0-../src/xf_canny_tb.cpp:299:17: note: 'm1' was declared here
+000/lane_detector_v2/src/xf_canny_tb.cpp305-1-1'm1' was declared here0-../src/xf_canny_tb.cpp:305:17: note: 'm1' was declared here
 000-     NMSTYPE m0, m1, m2;
 000-                 ^
-000/lane_detector_v2/src/xf_canny_tb.cpp299-1-1'm0' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:299:13: warning: 'm0' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp305-1-1'm0' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:305:13: warning: 'm0' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     NMSTYPE m0, m1, m2;
 000-             ^
 000-../src/xf_canny_tb.cpp: In function 'void xiHoughLinesstandard(cv::Mat&, std::vector<cv::Vec<float, 2> >&, float, float, int, int, int, int)':
-000/lane_detector_v2/src/xf_canny_tb.cpp528-1-1'min_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:528:39: warning: 'min_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp534-1-1'min_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:534:39: warning: 'min_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-     int numangle = cvRound((max_theta - min_theta) / theta);
 000-                                       ^
-000/lane_detector_v2/src/xf_canny_tb.cpp528-1-1'max_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:528:39: warning: 'max_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/src/xf_canny_tb.cpp534-1-1'max_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:534:39: warning: 'max_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]
 000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:31:0,
 000-                 from ../src/xf_canny_config.h:25,
-000-                 from ../src/xf_canny_tb.cpp:18:
+000-                 from ../src/xf_canny_tb.cpp:19:
 000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: At global scope:
 000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2679-1-1'xf::cv::sin_fix_lut' defined but not used [-Wunused-variable]1xf::cv::sin_fix_lut/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2679:23: warning: 'xf::cv::sin_fix_lut' defined but not used [-Wunused-variable]
 000- static unsigned short sin_fix_lut[1572] = {
@@ -1002,7 +1147,847 @@
 000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3357-1-1'short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)' defined but not used [-Wunused-function]1short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3357:14: warning: 'short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)' defined but not used [-Wunused-function]
 000- static short Atan2LookupFP24(ap_int24_t xs, ap_int24_t ys, int M1, int N1, int M2, int N2) {
 000-              ^
-000-g++ -o "lane_detector_v2" libs/xf_opencv/ext/xcl2/xcl2.o src/helper_functions.o src/xf_canny_tb.o -lxml2 -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_video -lopencv_calib3d -lopencv_highgui -lxilinxopencl -lpthread -lrt -lstdc++ -lmpfr -lgmp -lhlsmc++-GCC46 -lIp_floating_point_v7_0_bitacc_cmodel -lIp_xfft_v9_1_bitacc_cmodel -lIp_fir_compiler_v7_2_bitacc_cmodel -lIp_dds_compiler_v6_0_bitacc_cmodel -L/opt/xilinx/xrt/lib/ -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fpo_v7_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/lib/csim -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/dds_v6_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fir_v7_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1 -Wl,-rpath-link,/opt/xilinx/xrt/lib -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/lib/csim -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fpo_v7_0 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fir_v7_0 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/dds_v6_0
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_canny_tb.cpp:20:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp126-1-1'void xf::cv::register_rho_stg1_sin(ap_fixed<28, 13, (ap_q_mode)0u>&, ap_fixed<28, 13, (ap_q_mode)0u>, ap_fixed<16, 1, (ap_q_mode)0u>, bool)' defined but not used [-Wunused-function]1void xf::cv::register_rho_stg1_sin(ap_fixed<28, 13, (ap_q_mode)0u>&, ap_fixed<28, 13, (ap_q_mode)0u>, ap_fixed<16, 1, (ap_q_mode)0u>, bool)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:126:13: warning: 'void xf::cv::register_rho_stg1_sin(ap_fixed<28, 13, (ap_q_mode)0u>&, ap_fixed<28, 13, (ap_q_mode)0u>, ap_fixed<16, 1, (ap_q_mode)0u>, bool)' defined but not used [-Wunused-function]
+000- static void register_rho_stg1_sin(ap_fixed<28, 13, AP_RND>& rho_stg1_sino,
+000-             ^
+000-g++ -std=c++0x -D__SDSVHLS__ -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/ext/xcl2 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/labs/lane_detector_v2/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2020.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_houghlines_accel.o" "../src/xf_houghlines_accel.cpp"
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+000-                 from ../src/xf_houghlines_config.h:22,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp232-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:232:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp233-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:233:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp239-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:239:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp240-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:240:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp247-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:247:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp248-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:248:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp256-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:256:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp257-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:257:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp266-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:266:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp267-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:267:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp292-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:292:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp296-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:296:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp305-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:305:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp310-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:310:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp320-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:320:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp325-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:325:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp335-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:335:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp340-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:340:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp350-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:350:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp355-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:355:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp365-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:365:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp370-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:370:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp380-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:380:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp385-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:385:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp395-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:395:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp400-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:400:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp410-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:410:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp415-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:415:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp473-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:473:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp481-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:481:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp488-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:488:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp496-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:496:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp615-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:615:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp624-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:624:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp639-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:639:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp648-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:648:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp753-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:753:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000- #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp789-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:789:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1005-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1005:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1006-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1006:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1019-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1019:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1020-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1020:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1040-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1040:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1041-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1041:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1074-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1074:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1075-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1075:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1086-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1086:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1098-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1098:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1112-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1112:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1127-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1127:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1139-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1139:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1152-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1152:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1224-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1224:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1225-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1225:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1243-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1243:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1248-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1248:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1249-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1249:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-                 #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1279-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1279:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1291-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1291:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1307-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1307:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1308-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1308:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1321-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1321:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1322-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1322:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1335-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1335:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1345-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1345:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1358-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1358:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1371-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1371:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000-In file included from ../src/xf_houghlines_config.h:23:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp37-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp43-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:43:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp55-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:55:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp64-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:64:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp87-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:87:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp107-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:107:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp115-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:115:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=6 max=6
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp116-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:116:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp184-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:184:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp185-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:185:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp189-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:189:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp190-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:190:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp215-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:215:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp216-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:216:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp251-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:251:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp252-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:252:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp329-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:329:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp330-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:330:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp340-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:340:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp388-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:388:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp389-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:389:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp434-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:434:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp435-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:435:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp476-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:476:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp477-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:477:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp488-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:488:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp131-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:131:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp157-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:157:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp165-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:165:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=rhoN
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp166-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:166:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp171-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:171:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=AngleN
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp192-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:192:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp193-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:193:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=AngleN
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp208-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:208:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=accval_reg_set1 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp209-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:209:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg1_cos complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp210-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:210:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg1_sin complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp211-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:211:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg1_sin_wire complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp212-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:212:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg2 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp213-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:213:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=sinvals complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp214-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:214:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=cosvals complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp215-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:215:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_stg3_reg complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp216-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:216:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=rho_prev_set1 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp250-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:250:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp279-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:279:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp287-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:287:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp288-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:288:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp289-1-1ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:289:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+000-             #pragma HLS DEPENDENCE  array inter false
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp290-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:290:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp302-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:302:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp384-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:384:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp406-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:406:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp411-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:411:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp443-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:443:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=cond2 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp444-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:444:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=vote_at_rho_theta complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp445-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:445:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=vote_at_rho_theta_reg complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp446-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:446:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=four_conds complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp447-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:447:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=four_conds_reg complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp448-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:448:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=four_conds_reg_2 complete dim=0
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp454-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:454:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp466-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:466:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp472-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:472:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp485-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:485:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp505-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:505:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp515-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:515:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp562-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:562:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=local_max complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp563-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:563:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=local_max_rho complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp569-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:569:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp580-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:580:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=1 max=linesMax
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp585-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:585:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp595-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:595:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp641-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:641:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp664-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:664:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=accum complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp665-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:665:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-     #pragma HLS RESOURCE variable=accum core=RAM_T2P_BRAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp715-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:715:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp26-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:26:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE m_axi      port=img_in    offset=slave  bundle=gmem0 depth=__XF_DEPTH
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp28-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:28:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE m_axi      port=arrayy    offset=slave  bundle=gmem1 depth=__XF_DEPTH_Y
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp29-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:29:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE s_axilite  port=arrayy          
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp30-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:30:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE m_axi      port=arrayx    offset=slave  bundle=gmem2 depth=__XF_DEPTH_X
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp31-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:31:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE s_axilite  port=arrayx          
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp32-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:32:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE s_axilite  port=threshold      
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp33-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:33:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE s_axilite  port=maxlines          
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp34-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:34:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-   #pragma HLS INTERFACE s_axilite port=rows     
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp35-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:35:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE s_axilite port=cols     
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp36-1-1ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:36:0: warning: ignoring #pragma HLS INTERFACE [-Wunknown-pragmas]
+000-     #pragma HLS INTERFACE s_axilite  port=return
+000- ^
+000/lane_detector_v2/src/xf_houghlines_accel.cpp42-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-../src/xf_houghlines_accel.cpp:42:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-     #pragma HLS DATAFLOW
+000- ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: In instantiation of 'void xf::cv::xfVoting(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, ap_uint<12> (*)[(rhoN + 1)], ap_uint<12>, ap_uint<12>) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int AngleN = 180; int rhoN = 725; int MINTHETA = 0]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp669-1-1required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:669:54:   required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp728-1-1required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:728:46:   required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp50-1-1required from here0-../src/xf_houghlines_accel.cpp:50:54:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp203-1-1unused variable 'rho_stg1_sin_wire' [-Wunused-variable]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:203:78: warning: unused variable 'rho_stg1_sin_wire' [-Wunused-variable]
+000-     ap_fixed<28, 13, AP_RND> rho_stg1_sin[(AngleN)], rho_stg1_cos[(AngleN)], rho_stg1_sin_wire[AngleN],
+000-                                                                              ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp284-1-1label 'LOOPJ' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:284:5: warning: label 'LOOPJ' defined but not used [-Wunused-label]
+000-     LOOPJ:
+000-     ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp298-1-1label 'LOOPN1' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:298:9: warning: label 'LOOPN1' defined but not used [-Wunused-label]
+000-         LOOPN1:
+000-         ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp187-1-1label 'loop_init' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:187:1: warning: label 'loop_init' defined but not used [-Wunused-label]
+000- loop_init:
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp276-1-1label 'LOOPI' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:276:1: warning: label 'LOOPI' defined but not used [-Wunused-label]
+000- LOOPI:
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp162-1-1label 'loop_init_r' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:162:1: warning: label 'loop_init_r' defined but not used [-Wunused-label]
+000- loop_init_r:
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp381-1-1label 'LOOPN2' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:381:1: warning: label 'LOOPN2' defined but not used [-Wunused-label]
+000- LOOPN2:
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp168-1-1label 'loop_init_n' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:168:5: warning: label 'loop_init_n' defined but not used [-Wunused-label]
+000-     loop_init_n:
+000-     ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: In instantiation of 'void xf::cv::xfThinning(ap_uint<12> (*)[(rhoN + 1)], short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int AngleN = 180u; int rhoN = 725]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp671-1-1required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:671:26:   required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp728-1-1required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:728:46:   required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp50-1-1required from here0-../src/xf_houghlines_accel.cpp:50:54:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp463-1-1label 'RHOLOOPTHINNING' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:463:1: warning: label 'RHOLOOPTHINNING' defined but not used [-Wunused-label]
+000- RHOLOOPTHINNING:
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp469-1-1label 'THINNINGINIT' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:469:5: warning: label 'THINNINGINIT' defined but not used [-Wunused-label]
+000-     THINNINGINIT:
+000-     ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp482-1-1label 'THINWRITELOOP' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:482:5: warning: label 'THINWRITELOOP' defined but not used [-Wunused-label]
+000-     THINWRITELOOP:
+000-     ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: In instantiation of 'void xf::cv::xfSorting(ap_uint<12> (*)[(rhoN + 1)], float*, float*, short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int AngleN = 180; int rhoN = 725; int linesMax = 25; int MINTHETA = 0]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp674-1-1required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:674:33:   required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp728-1-1required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:728:46:   required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp50-1-1required from here0-../src/xf_houghlines_accel.cpp:50:54:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp576-1-1label 'MAINL' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:576:1: warning: label 'MAINL' defined but not used [-Wunused-label]
+000- MAINL:
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp592-1-1label 'THETAL' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:592:5: warning: label 'THETAL' defined but not used [-Wunused-label]
+000-     THETAL:
+000-     ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+000-                 from ../src/xf_houghlines_config.h:22,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp: In instantiation of 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2AxiStream(ap_uint<_AP_W2>*, hls::stream<ap_uint<_AP_W2> >&, ap_uint<(xf::cv::log2<ADDRBOUND>::cvalue + 1)>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1143-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2Mat(ap_uint<_AP_W2>*, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1143:43:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2Mat(ap_uint<_AP_W2>*, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1192-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<T, ROWS, COLS, NPC, XFCVDEPTH>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1192:62:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<T, ROWS, COLS, NPC, XFCVDEPTH>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp520-1-1required from 'void xf::cv::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<MAT_T, ROWS, COLS, NPC>&) [with int PTR_WIDTH = 8; int MAT_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:520:76:   required from 'void xf::cv::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<MAT_T, ROWS, COLS, NPC>&) [with int PTR_WIDTH = 8; int MAT_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp46-1-1required from here0-../src/xf_houghlines_accel.cpp:46:79:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1002-1-1label 'MMIterInLoop1' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1002:5: warning: label 'MMIterInLoop1' defined but not used [-Wunused-label]
+000-     MMIterInLoop1:
+000-     ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: In instantiation of 'void xf::cv::thinningCompare(ap_uint<12>*, ap_uint<12>*, bool, bool*, bool, bool, bool*, short int) [with int AngleN = 180]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp480-1-1required from 'void xf::cv::xfThinning(ap_uint<12> (*)[(rhoN + 1)], short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int AngleN = 180u; int rhoN = 725]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:480:42:   required from 'void xf::cv::xfThinning(ap_uint<12> (*)[(rhoN + 1)], short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int AngleN = 180u; int rhoN = 725]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp671-1-1required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:671:26:   required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp728-1-1required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:728:46:   required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp50-1-1required from here0-../src/xf_houghlines_accel.cpp:50:54:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp408-1-1label 'CONDLOOP' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:408:1: warning: label 'CONDLOOP' defined but not used [-Wunused-label]
+000- CONDLOOP:
+000- ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: In instantiation of 'void xf::cv::get_maxval_index(ap_uint<12>*, ap_uint<12>&, ap_uint<12>&) [with int rhoN = 725]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp587-1-1required from 'void xf::cv::xfSorting(ap_uint<12> (*)[(rhoN + 1)], float*, float*, short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int AngleN = 180; int rhoN = 725; int linesMax = 25; int MINTHETA = 0]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:587:82:   required from 'void xf::cv::xfSorting(ap_uint<12> (*)[(rhoN + 1)], float*, float*, short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int AngleN = 180; int rhoN = 725; int linesMax = 25; int MINTHETA = 0]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp674-1-1required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:674:33:   required from 'void xf::cv::xfHoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, ap_uint<12>, ap_uint<12>, short int) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int linesMax = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp728-1-1required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:728:46:   required from 'void xf::cv::HoughLines(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, float*, float*, short int, short int) [with unsigned int RHO = 1u; unsigned int THETA = 2u; int MAXLINES = 25; int DIAG = 725; int MINTHETA = 0; int MAXTHETA = 180; int SRC_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp50-1-1required from here0-../src/xf_houghlines_accel.cpp:50:54:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp511-1-1label 'RHOLOOP' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:511:1: warning: label 'RHOLOOP' defined but not used [-Wunused-label]
+000- RHOLOOP:
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+000-                 from ../src/xf_houghlines_config.h:22,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp: In instantiation of 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::AxiStream2MatStream(hls::stream<ap_uint<_AP_W2> >&, hls::stream<ap_uint<XF_BITS_PER_CLOCK>, XFCVDEPTH>&, int, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1103-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::AxiStream2Mat(hls::stream<ap_uint<_AP_W2> >&, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1103:81:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::AxiStream2Mat(hls::stream<ap_uint<_AP_W2> >&, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1144-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2Mat(ap_uint<_AP_W2>*, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1144:46:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2Mat(ap_uint<_AP_W2>*, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1192-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<T, ROWS, COLS, NPC, XFCVDEPTH>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1192:62:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<T, ROWS, COLS, NPC, XFCVDEPTH>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp520-1-1required from 'void xf::cv::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<MAT_T, ROWS, COLS, NPC>&) [with int PTR_WIDTH = 8; int MAT_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:520:76:   required from 'void xf::cv::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<MAT_T, ROWS, COLS, NPC>&) [with int PTR_WIDTH = 8; int MAT_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp46-1-1required from here0-../src/xf_houghlines_accel.cpp:46:79:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1037-1-1label 'MMIterInLoopRow' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1037:5: warning: label 'MMIterInLoopRow' defined but not used [-Wunused-label]
+000-     MMIterInLoopRow:
+000-     ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp: In instantiation of 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::MatStream2Mat(hls::stream<ap_uint<XF_BITS_PER_CLOCK>, XFCVDEPTH>&, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1104-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::AxiStream2Mat(hls::stream<ap_uint<_AP_W2> >&, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1104:60:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::AxiStream2Mat(hls::stream<ap_uint<_AP_W2> >&, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1144-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2Mat(ap_uint<_AP_W2>*, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1144:46:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Axi2Mat(ap_uint<_AP_W2>*, ap_uint<XF_BITS_PER_CLOCK>*, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1192-1-1required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<T, ROWS, COLS, NPC, XFCVDEPTH>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1192:62:   required from 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<T, ROWS, COLS, NPC, XFCVDEPTH>&) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]'
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp520-1-1required from 'void xf::cv::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<MAT_T, ROWS, COLS, NPC>&) [with int PTR_WIDTH = 8; int MAT_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:520:76:   required from 'void xf::cv::Array2xfMat(ap_uint<_AP_W2>*, xf::cv::Mat<MAT_T, ROWS, COLS, NPC>&) [with int PTR_WIDTH = 8; int MAT_T = 0; int ROWS = 512; int COLS = 512; int NPC = 1]'
+000/lane_detector_v2/src/xf_houghlines_accel.cpp46-1-1required from here0-../src/xf_houghlines_accel.cpp:46:79:   required from here
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1071-1-1label 'MMIterInLoop2' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1071:5: warning: label 'MMIterInLoop2' defined but not used [-Wunused-label]
+000-     MMIterInLoop2:
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'const typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W, _AP_S>::arg1 ap_int_base<_AP_W, _AP_S>::operator++(int) [with int _AP_W = 13; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W, _AP_S>::arg1 = ap_uint<13>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<1, false>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<1, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW739-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:739:40: note: '<anonymous>' was declared here
+000-     operator+=((ap_int_base<1, false>)1);
+000-                                        ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'const typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W, _AP_S>::arg1 ap_int_base<_AP_W, _AP_S>::operator++(int) [with int _AP_W = 10; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W, _AP_S>::arg1 = ap_uint<10>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<1, false>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<1, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW739-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:739:40: note: '<anonymous>' was declared here
+000-     operator+=((ap_int_base<1, false>)1);
+000-                                        ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'bool operator<(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 10; bool _AP_S = false]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1586-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1586:19: note: '<anonymous>' was declared here
+000-   OP_REL_WITH_INT(<, C_TYPE, _AP_W2, _AP_S2)        \
+000-                   ^
+000/lane_detector_v2/Emulation-SW1581-1-1in definition of macro 'OP_REL_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1581:15: note: in definition of macro 'OP_REL_WITH_INT'
+000-     return op REL_OP ap_int_base<_AP_W2, _AP_S2>(op2);               \
+000-               ^
+000/lane_detector_v2/Emulation-SW1598-1-1in expansion of macro 'ALL_OP_REL_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1598:1: note: in expansion of macro 'ALL_OP_REL_WITH_INT'
+000- ALL_OP_REL_WITH_INT(int, _AP_SIZE_int, true)
+000- ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::plus operator+(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 10; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::plus = ap_int<33>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1453-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1453:19: note: '<anonymous>' was declared here
+000-   OP_BIN_WITH_INT(+, C_TYPE, _AP_W2, _AP_S2, plus)  \
+000-                   ^
+000/lane_detector_v2/Emulation-SW1448-1-1in definition of macro 'OP_BIN_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1448:15: note: in definition of macro 'OP_BIN_WITH_INT'
+000-     return op BIN_OP ap_int_base<_AP_W2, _AP_S2>(i_op);                    \
+000-               ^
+000/lane_detector_v2/Emulation-SW1467-1-1in expansion of macro 'ALL_OP_BIN_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1467:1: note: in expansion of macro 'ALL_OP_BIN_WITH_INT'
+000- ALL_OP_BIN_WITH_INT(int, _AP_SIZE_int, true)
+000- ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+(const ap_fixed_base<_AP_W2, _AP_I2, _AP_S2, _AP_Q2, _AP_O2, _AP_N2>&) const [with int _AP_W2 = 16; int _AP_I2 = 1; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)0u; ap_o_mode _AP_O2 = (ap_o_mode)3u; int _AP_N2 = 0; int _AP_W = 28; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)0u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus = ap_fixed<29, 14, (ap_q_mode)5u, (ap_o_mode)3u, 0>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'ret.ap_private<29, true, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'ret.ap_private<29, true, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_fixed.h:55:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:367,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1186-1-1'ret' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:1186:56: note: 'ret' was declared here
+000-     typename RType<_AP_W2, _AP_I2, _AP_S2>::Rty##_base ret, lhs(*this),    \
+000-                                                        ^
+000/lane_detector_v2/Emulation-SW1192-1-1in expansion of macro 'OP_BIN_AF'0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:1192:3: note: in expansion of macro 'OP_BIN_AF'
+000-   OP_BIN_AF(+, plus)
+000-   ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::minus operator-(const ap_int_base<_AP_W2, _AP_S2>&, const ap_int_base<_AP_W3, _AP_S3>&) [with int _AP_W = 11; bool _AP_S = false; int _AP_W2 = 64; bool _AP_S2 = true; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_W2, _AP_S2>::minus = ap_int<65>]':
+000/lane_detector_v2/Emulation-SW3426-1-1'lhs.ap_private<65, true, false>::pVal[1]' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:3426:33: warning: 'lhs.ap_private<65, true, false>::pVal[1]' is used uninitialized in this function [-Wuninitialized]
+000-         _AP_S ? ((((int64_t)pVal[_AP_N - 1]) << (excess_bits)) >> excess_bits)
+000-                                 ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1343-1-1'lhs' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1343:37: note: 'lhs' was declared here
+000-         _AP_W2, _AP_S2>::Rty##_base lhs(op);                                  \
+000-                                     ^
+000/lane_detector_v2/Emulation-SW1354-1-1in expansion of macro 'OP_BIN_AP'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1354:1: note: in expansion of macro 'OP_BIN_AP'
+000- OP_BIN_AP(-, minus)
+000- ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+(const ap_fixed_base<_AP_W2, _AP_I2, _AP_S2, _AP_Q2, _AP_O2, _AP_N2>&) const [with int _AP_W2 = 14; int _AP_I2 = 13; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)0u; ap_o_mode _AP_O2 = (ap_o_mode)3u; int _AP_N2 = 0; int _AP_W = 14; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)0u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus = ap_fixed<15, 14, (ap_q_mode)5u, (ap_o_mode)3u, 0>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'ret.ap_private<15, true, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'ret.ap_private<15, true, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_fixed.h:55:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:367,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1186-1-1'ret' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:1186:56: note: 'ret' was declared here
+000-     typename RType<_AP_W2, _AP_I2, _AP_S2>::Rty##_base ret, lhs(*this),    \
+000-                                                        ^
+000/lane_detector_v2/Emulation-SW1192-1-1in expansion of macro 'OP_BIN_AF'0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:1192:3: note: in expansion of macro 'OP_BIN_AF'
+000-   OP_BIN_AF(+, plus)
+000-   ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::div operator/(const ap_int_base<_AP_W2, _AP_S2>&, int) [with int _AP_W = 12; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<_AP_SIZE_int, true>::div = ap_int<13>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<32, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1455-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1455:19: note: '<anonymous>' was declared here
+000-   OP_BIN_WITH_INT(/, C_TYPE, _AP_W2, _AP_S2, div)   \
+000-                   ^
+000/lane_detector_v2/Emulation-SW1448-1-1in definition of macro 'OP_BIN_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1448:15: note: in definition of macro 'OP_BIN_WITH_INT'
+000-     return op BIN_OP ap_int_base<_AP_W2, _AP_S2>(i_op);                    \
+000-               ^
+000/lane_detector_v2/Emulation-SW1467-1-1in expansion of macro 'ALL_OP_BIN_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:1467:1: note: in expansion of macro 'ALL_OP_BIN_WITH_INT'
+000- ALL_OP_BIN_WITH_INT(int, _AP_SIZE_int, true)
+000- ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'typename ap_int_base<_AP_W, _AP_S>::RType<1, false>::minus ap_int_base<_AP_W, _AP_S>::operator-() const [with int _AP_W = 13; bool _AP_S = false; typename ap_int_base<_AP_W, _AP_S>::RType<1, false>::minus = ap_int<14>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<1, false>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<1, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:55:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW755-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_base.h:755:37: note: '<anonymous>' was declared here
+000-     return ap_int_base<1, false>(0) - *this;
+000-                                     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'void xf::cv::thinningCompare(ap_uint<12>*, ap_uint<12>*, bool, bool*, bool, bool, bool*, short int) [with int AngleN = 180]':
+000/lane_detector_v2/Emulation-SW2141-1-1'ang2.ap_private<10, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'ang2.ap_private<10, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp409-1-1'ang2' was declared here0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:409:22: note: 'ang2' was declared here
+000-     for (ap_uint<10> ang2 = 0; ang2 < AngleN; ang2++) {
+000-                      ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: In function 'void xf::cv::xfThinning(ap_uint<12> (*)[(rhoN + 1)], short int) [with int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int AngleN = 180u; int rhoN = 725]':
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp480-1-1'cond4' may be used uninitialized in this function [-Wmaybe-uninitialized]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:480:42: warning: 'cond4' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-                                 threshold);
+000-                                          ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp480-1-1'cond3' may be used uninitialized in this function [-Wmaybe-uninitialized]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:480:42: warning: 'cond3' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp480-1-1'cond1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:480:42: warning: 'cond1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'void xf::cv::get_maxval_index(ap_uint<12>*, ap_uint<12>&, ap_uint<12>&) [with int rhoN = 725]':
+000/lane_detector_v2/Emulation-SW2141-1-1'local_max.ap_private<12, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'local_max.ap_private<12, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp508-1-1'local_max' was declared here0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:508:17: note: 'local_max' was declared here
+000-     ap_uint<12> local_max = 0;
+000-                 ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::mult ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator*(const ap_fixed_base<_AP_W2, _AP_I2, _AP_S2, _AP_Q2, _AP_O2, _AP_N2>&) const [with int _AP_W2 = 16; int _AP_I2 = 1; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)0u; ap_o_mode _AP_O2 = (ap_o_mode)3u; int _AP_N2 = 0; int _AP_W = 14; int _AP_I = 14; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::mult = ap_fixed<30, 15, (ap_q_mode)5u, (ap_o_mode)3u, 0>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'r.ap_private<30, true, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'r.ap_private<30, true, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_fixed.h:55:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:367,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW1115-1-1'r' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:1115:55: note: 'r' was declared here
+000-     typename RType<_AP_W2, _AP_I2, _AP_S2>::mult_base r, t;
+000-                                                       ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::div operator/(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, unsigned char) [with int _AP_W = 16; int _AP_I = 1; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)0u; ap_o_mode _AP_O = (ap_o_mode)3u; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<8, 8, false>::div = ap_fixed<16, 1, (ap_q_mode)5u, (ap_o_mode)3u, 0>]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<8, false>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<8, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_fixed.h:55:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:367,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW2137-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:2137:74: note: '<anonymous>' was declared here
+000-     return op.operator BIN_OP(ap_fixed_base<_AP_W2, _AP_W2, _AP_S2>(i_op)); \
+000-                                                                          ^
+000/lane_detector_v2/Emulation-SW2189-1-1in expansion of macro 'AF_BIN_OP_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:2189:3: note: in expansion of macro 'AF_BIN_OP_WITH_INT'
+000-   AF_BIN_OP_WITH_INT(/, C_TYPE, (BITS), (SIGN), div)      \
+000-   ^
+000/lane_detector_v2/Emulation-SW2216-1-1in expansion of macro 'ALL_AF_OP_WITH_INT'0-/opt/Xilinx/Vivado/2020.1/include/ap_fixed_base.h:2216:1: note: in expansion of macro 'ALL_AF_OP_WITH_INT'
+000- ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+000- ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In member function 'ap_range_ref<_AP_W, _AP_S>& ap_range_ref<_AP_W, _AP_S>::operator=(const ap_range_ref<_AP_W, _AP_S>&) [with int _AP_W = 8; bool _AP_S = false]':
+000/lane_detector_v2/Emulation-SW2141-1-1'<anonymous>.ap_private<8, false>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: '<anonymous>.ap_private<8, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:56:0,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/Emulation-SW422-1-1'<anonymous>' was declared here0-/opt/Xilinx/Vivado/2020.1/include/ap_int_ref.h:422:58: note: '<anonymous>' was declared here
+000-     return operator=((const ap_int_base<_AP_W, false>)val);
+000-                                                          ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In static member function 'static void xf::cv::MMIterIn<PTR_WIDTH, T, ROWS, COLS, NPC, XFCVDEPTH>::AxiStream2MatStream(hls::stream<ap_uint<_AP_W2> >&, hls::stream<ap_uint<XF_BITS_PER_CLOCK>, XFCVDEPTH>&, int, int, int) [with int PTR_WIDTH = 8; int T = 0; int ROWS = 512; int COLS = 512; int NPC = 1; int XFCVDEPTH = 2]':
+000/lane_detector_v2/Emulation-SW2141-1-1'val.ap_private<8, false>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'val.ap_private<8, false>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+000-                 from ../src/xf_houghlines_config.h:22,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1033-1-1'val' was declared here0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1033:28: note: 'val' was declared here
+000-         ap_uint<PTR_WIDTH> val = 0;
+000-                            ^
+000-In file included from /opt/Xilinx/Vivado/2020.1/include/ap_common.h:641:0,
+000-                 from /opt/Xilinx/Vivado/2020.1/include/ap_int.h:54,
+000-                 from ../src/xf_houghlines_config.h:21,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h: In function 'void xf::cv::xfVoting(xf::cv::Mat<SRC_T, ROWS, COLS, NPC>&, ap_uint<12> (*)[(rhoN + 1)], ap_uint<12>, ap_uint<12>) [with int SRC_T = 0; int ROWS = 512; int COLS = 512; int DEPTH = 0; int NPC = 1; int WORDWIDTH = 1; unsigned int theta = 2u; unsigned int rho = 1u; int AngleN = 180; int rhoN = 725; int MINTHETA = 0]':
+000/lane_detector_v2/Emulation-SW2141-1-1'r.ap_private<13, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]1-/opt/Xilinx/Vivado/2020.1/include/etc/ap_private.h:2141:5: warning: 'r.ap_private<13, false, true>::VAL' is used uninitialized in this function [-Wuninitialized]
+000-     VAL = (ValType)(
+000-     ^
+000-In file included from ../src/xf_houghlines_config.h:24:0,
+000-                 from ../src/xf_houghlines_accel.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp163-1-1'r' was declared here0-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:163:22: note: 'r' was declared here
+000-     for (ap_uint<13> r = 0; r < rhoN + 1; r++) {
+000-                      ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp: At global scope:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp126-1-1'void xf::cv::register_rho_stg1_sin(ap_fixed<28, 13, (ap_q_mode)0u>&, ap_fixed<28, 13, (ap_q_mode)0u>, ap_fixed<16, 1, (ap_q_mode)0u>, bool)' defined but not used [-Wunused-function]1void xf::cv::register_rho_stg1_sin(ap_fixed<28, 13, (ap_q_mode)0u>&, ap_fixed<28, 13, (ap_q_mode)0u>, ap_fixed<16, 1, (ap_q_mode)0u>, bool)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:126:13: warning: 'void xf::cv::register_rho_stg1_sin(ap_fixed<28, 13, (ap_q_mode)0u>&, ap_fixed<28, 13, (ap_q_mode)0u>, ap_fixed<16, 1, (ap_q_mode)0u>, bool)' defined but not used [-Wunused-function]
+000- static void register_rho_stg1_sin(ap_fixed<28, 13, AP_RND>& rho_stg1_sino,
+000-             ^
+000-g++ -o "lane_detector_v2" libs/xf_opencv/ext/xcl2/xcl2.o src/xf_canny_tb.o src/xf_houghlines_accel.o -lxml2 -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_video -lopencv_calib3d -lopencv_highgui -lxilinxopencl -lpthread -lrt -lstdc++ -lmpfr -lgmp -lhlsmc++-GCC46 -lIp_floating_point_v7_0_bitacc_cmodel -lIp_xfft_v9_1_bitacc_cmodel -lIp_fir_compiler_v7_2_bitacc_cmodel -lIp_dds_compiler_v6_0_bitacc_cmodel -L/opt/xilinx/xrt/lib/ -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fpo_v7_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/lib/csim -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/dds_v6_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fir_v7_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1 -Wl,-rpath-link,/opt/xilinx/xrt/lib -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/lib/csim -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fpo_v7_0 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fir_v7_0 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/dds_v6_0
 000/lane_detector_v2/Emulation-SW0-1-1libgmp.so.11, needed by /opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1/libIp_xfft_v9_1_bitacc_cmodel.so, may conflict with libgmp.so.71-/bin/ld: warning: libgmp.so.11, needed by /opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1/libIp_xfft_v9_1_bitacc_cmodel.so, may conflict with libgmp.so.7
 000-/opt/Xilinx/Vitis/2020.1/bin/v++ --package --config package.cfg krnl_canny.xclbin
 000-Option Map File Used: '/opt/Xilinx/Vitis/2020.1/data/vitis/vpp/optMap.xml'
@@ -1015,9 +2000,9 @@
 000-	Reports: /home/centos/labs/lane_detector_v2/Emulation-SW/package.build/reports/package
 000-	Log files: /home/centos/labs/lane_detector_v2/Emulation-SW/package.build/logs/package
 000-INFO: [v++ 60-1657] Initializing dispatch client.
-000-Running Dispatch Server on port:39259
-000-INFO: [v++ 60-1548] Creating build summary session with primary output ./v++.package_summary, at Fri Jan 15 00:10:26 2021
-000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Jan 15 00:10:26 2021
+000-Running Dispatch Server on port:42493
+000-INFO: [v++ 60-1548] Creating build summary session with primary output ./v++.package_summary, at Fri Jan 15 00:46:38 2021
+000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Jan 15 00:46:38 2021
 000-INFO: [v++ 60-895]   Target platform: /home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
 000-INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
 000-INFO: [v++ 60-2256] Packaging for software emulation
@@ -1026,5 +2011,5 @@
 000-INFO: [v++ 60-791] Total elapsed time: 0h 0m 14s
 000-INFO: [v++ 60-1653] Closing dispatch client.
 00255-
-00:10:30 Build Finished (took 21s.516ms)
+00:46:43 Build Finished (took 29s.113ms)
 

@@ -15,11 +15,12 @@
  */
 
 #include "common/xf_headers.hpp"
+
 #include "xf_canny_config.h"
+#include "xf_houghlines_config.h"
 
 #include "xcl2.hpp"
 
-#include "helper_functions.h"
 
 typedef unsigned char NMSTYPE;
 
@@ -144,7 +145,7 @@ int main(int argc, char** argv) {
     event_sp_edge.getProfilingInfo(CL_PROFILING_COMMAND_START, &startedge);
     event_sp_edge.getProfilingInfo(CL_PROFILING_COMMAND_END, &endedge);
     diff_prof_edge = endedge - startedge;
-    std::cout << (diff_prof_edge / 1000000) << "ms" << std::endl;
+    std::cout << "\n Profiling " << (diff_prof_edge / 1000000) << "ms" << std::endl;
 
     // Copying Device result data to Host memory
     q.enqueueReadBuffer(imageFromDeviceedge, CL_TRUE, 0, (height * width), out_img_edge.data);
@@ -203,6 +204,7 @@ int main(int argc, char** argv) {
     img_gray.copyTo(crefxi); // crefxi is a deep copy of img_gray
 	std::vector<cv::Vec2f> linesxi;
 
+/*
 #define RHOSTEP 	     1
 #define THETASTEP 	     2
 #define HOUGH_THRESHOLD  75
@@ -210,11 +212,12 @@ int main(int argc, char** argv) {
 
 #define MINTHETA 0
 #define MAXTHETA 180
+*/
 
 	float thetaval = (THETASTEP / 2.0);
 	float angleref = (CV_PI * thetaval) / 180;
 
-	xiHoughLinesstandard(ocv_img, linesxi, RHOSTEP, angleref, HOUGH_THRESHOLD, MAX_LINES, MAXTHETA,
+	xiHoughLinesstandard(ocv_img, linesxi, RHOSTEP, angleref, HOUGH_THRESHOLD, LINESMAX, MAXTHETA,
 						 MINTHETA); // FLOATING POINT Reference code
 
 	std::cout << "\n FLOATING POINT Reference Hough Transform code finished >>>> " << std::endl;

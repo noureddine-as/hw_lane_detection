@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+/* Used Everywhere */
+#define WIDTH 512
+#define HEIGHT 512
+
 #define RO 0
 #define NO 1
 

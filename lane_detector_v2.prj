@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="lane_detector_v2" location="/home/centos/labs/lane_detector_v2" platform="/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" platformUID="xilinx:aws-vu9p-f1:shell-v04261818:201920.2(custom)" systemProject="lane_detector_v2_system" sysConfig="config0_0" cpu="x86" cpuInstance="x86" os="Linux">
-  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.1419168349" dirty="true">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.1419168349">
     <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
       <binaryContainers name="krnl_canny">
         <kernels name="canny_accel" sourceFile="src/xf_canny_accel.cpp">

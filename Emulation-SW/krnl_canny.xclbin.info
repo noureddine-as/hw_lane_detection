@@ -11,7 +11,7 @@ xclbin Information
    Kernels:                edgetracing_accel, canny_accel
    Signature:              
    Content:                SW Emulation Binary
-   UUID (xclbin):          8b345fc5-34d0-4d81-a057-150cfade14bb
+   UUID (xclbin):          cacf1ded-8c62-4eee-bd3c-9b35520c6d3a
    Sections:               BITSTREAM, BUILD_METADATA, EMBEDDED_METADATA, 
                            DEBUG_DATA
 ==============================================================================
