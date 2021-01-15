@@ -1,0 +1,1030 @@
+2021-01-15T00:10:09.28999500255-00:10:09 **** Incremental Build of configuration Emulation-SW for project lane_detector_v2 ****
+000-make -j8 incremental 
+000-g++ -std=c++0x -D__SDSVHLS__ -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/ext/xcl2 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/labs/lane_detector_v2/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2020.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/helper_functions.o" "../src/helper_functions.cpp"
+000-g++ -std=c++0x -D__SDSVHLS__ -DVITIS_PLATFORM=xilinx_aws-vu9p-f1_shell-v04261818_201920_2 -D__USE_XOPEN2K8 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/ext/xcl2 -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/usr/include/opencv -I/home/centos/labs/lane_detector_v2/src/build -I/opt/xilinx/xrt/include/ -I/opt/Xilinx/Vivado/2020.1/include/ -O0 -g -Wall -O3 -c -fmessage-length=0 -o "src/xf_canny_tb.o" "../src/xf_canny_tb.cpp"
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_common.hpp:20:0,
+000-                 from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:20,
+000-                 from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_headers.hpp:28,
+000-                 from ../src/xf_canny_tb.cpp:17:
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp232-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:232:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp233-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:233:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp239-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:239:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp240-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:240:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp247-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:247:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp248-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:248:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp256-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:256:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp257-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:257:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp266-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:266:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=val dim=1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp267-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:267:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-  #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp292-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:292:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp296-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:296:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp305-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:305:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp310-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:310:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp320-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:320:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp325-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:325:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp335-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:335:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp340-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:340:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp350-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:350:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp355-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:355:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp365-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:365:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp370-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:370:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp380-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:380:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp385-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:385:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp395-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:395:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp400-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:400:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp410-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:410:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp415-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:415:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp473-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:473:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp481-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:481:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp488-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:488:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp496-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:496:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp615-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:615:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp624-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:624:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp639-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:639:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp648-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:648:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp753-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:753:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000- #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp789-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:789:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1005-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1005:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1006-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1006:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1019-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1019:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1020-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1020:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1040-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1040:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1041-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1041:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1074-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1074:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1075-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1075:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1086-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1086:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1098-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1098:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1112-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1112:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1127-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1127:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1139-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1139:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1152-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1152:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1224-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1224:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=LOOPBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1225-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1225:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1243-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1243:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1248-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1248:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=1 max=COLS_BOUND_PER_NPC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1249-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1249:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-                 #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1279-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1279:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1291-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1291:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1307-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1307:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1308-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1308:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1321-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1321:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=ADDRBOUND
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1322-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1322:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1335-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1335:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1345-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1345:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1358-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1358:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp1371-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1371:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000-In file included from ../src/xf_canny_config.h:24:0,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp37-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:37:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp43-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:43:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp55-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:55:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp64-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:64:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp87-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:87:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp107-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:107:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp115-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:115:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=6 max=6
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp116-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:116:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp184-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:184:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=IN_BH max=IN_BH
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp185-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:185:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp189-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:189:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp190-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:190:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=IN_BW max=IN_BW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp215-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:215:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp216-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:216:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp251-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:251:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp252-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:252:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp329-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:329:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp330-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:330:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp340-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:340:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp388-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:388:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp389-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:389:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp434-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:434:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp435-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:435:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp476-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:476:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=1 max=TRIPCOUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp477-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:477:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-             #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp488-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:488:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:31:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2949-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2949:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2950-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2950:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2963-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2963:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2964-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2964:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2977-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2977:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2978-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2978:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2991-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2991:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2992-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2992:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3041-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3041:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3042-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3042:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3055-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3055:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3056-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3056:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3069-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3069:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3070-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3070:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3083-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3083:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3084-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3084:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3116-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3116:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=24 max=24
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3117-1-1ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3117:0: warning: ignoring #pragma HLS PIPELINE [-Wunknown-pragmas]
+000-         #pragma HLS PIPELINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3448-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3448:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:33:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp25-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:25:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp58-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:58:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp92-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:92:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp97-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:97:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=array complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp118-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:118:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp168-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:168:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp173-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:173:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=buf_cop complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp185-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:185:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp186-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:186:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp190-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:190:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-             #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp199-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:199:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp200-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:200:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp201-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:201:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp209-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:209:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp210-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:210:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp225-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:225:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp226-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:226:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp232-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:232:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                     #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp239-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:239:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp243-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:243:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                     #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp244-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:244:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                     #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp258-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:258:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                     #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp262-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:262:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp263-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:263:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                         #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp273-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:273:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp310-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:310:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp314-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:314:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                     #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp315-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:315:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                     #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp323-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:323:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp327-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:327:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                     #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp328-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:328:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                     #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp337-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:337:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp338-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:338:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp348-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:348:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp349-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:349:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp371-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:371:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp372-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:372:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp376-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:376:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                     #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp377-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:377:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                     #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp411-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:411:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=row_ind complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp421-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:421:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=OutputValues complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp422-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:422:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=OutputValues1 complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp427-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:427:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=src_buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp428-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:428:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=src_buf complete dim=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp437-1-1ignoring #pragma HLS array [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:437:0: warning: ignoring #pragma HLS array [-Wunknown-pragmas]
+000-         #pragma HLS array reshape variable=buf dim=1 factor=WIN_SZ cyclic
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp438-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:438:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-         #pragma HLS RESOURCE variable=buf core=RAM_S2P_URAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp442-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:442:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-         #pragma HLS RESOURCE variable=buf core=RAM_S2P_BRAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp443-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:443:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-         #pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp450-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:450:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp458-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:458:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp462-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:462:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp463-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:463:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp464-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:464:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_FLATTEN OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp473-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:473:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp477-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:477:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp478-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:478:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp487-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:487:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp501-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:501:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=WIN_SZ max=WIN_SZ
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp502-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:502:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-             #pragma HLS UNROLL
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:34:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp41-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:41:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp66-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:66:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp72-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:72:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-         #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp99-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:99:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp109-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:109:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp110-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:110:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp176-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:176:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=OutputValues complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp182-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:182:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=src_buf1 complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp183-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:183:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=src_buf2 complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp184-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:184:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=src_buf3 complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp191-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:191:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-     #pragma HLS RESOURCE variable=buf core=RAM_S2P_BRAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp192-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:192:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp199-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:199:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp200-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:200:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp211-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:211:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:35:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp74-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:74:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp75-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:75:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp81-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:81:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=COLS_TRIP max=COLS_TRIP
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp82-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:82:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp93-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:93:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp149-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_magnitude.hpp:149:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:36:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp142-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:142:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp149-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:149:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp200-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:200:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp209-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:209:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=COLS_COUNT max=COLS_COUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp210-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:210:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp241-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:241:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=NPC max=NPC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp242-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:242:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp254-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:254:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-                 #pragma HLS LOOP_TRIPCOUNT min=NPC max=NPC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp255-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:255:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp314-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:314:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=nmsvalue complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp321-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:321:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-                                            #pragma HLS ARRAY_PARTITION variable=l00_buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp322-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:322:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-                                            #pragma HLS ARRAY_PARTITION variable=l10_buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp323-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:323:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-                                            #pragma HLS ARRAY_PARTITION variable=l20_buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp330-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:330:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=angle complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp335-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:335:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp339-1-1ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:339:0: warning: ignoring #pragma HLS ARRAY_PARTITION [-Wunknown-pragmas]
+000-     #pragma HLS ARRAY_PARTITION variable=angle_buf complete dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp345-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:345:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=COLS_COUNT max=COLS_COUNT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp346-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:346:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-         #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp363-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:363:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:36:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp452-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:452:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp453-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:453:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp459-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:459:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=COLS_TRIP max=COLS_TRIP
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp460-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:460:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp471-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:471:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp487-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:487:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-                 #pragma HLS RESOURCE variable=tg22x core=MulnS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp533-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:533:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000-In file included from ../src/xf_canny_config.h:25:0,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp58-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:58:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp59-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:59:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp64-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:64:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=TC max=TC
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp65-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:65:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp99-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:99:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_TRIPCOUNT min=ROWS max=ROWS
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp100-1-1ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:100:0: warning: ignoring #pragma HLS LOOP_FLATTEN [-Wunknown-pragmas]
+000-         #pragma HLS LOOP_FLATTEN off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp106-1-1ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:106:0: warning: ignoring #pragma HLS LOOP_TRIPCOUNT [-Wunknown-pragmas]
+000-             #pragma HLS LOOP_TRIPCOUNT min=COLS/32 max=COLS/32
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp107-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:107:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp112-1-1ignoring #pragma HLS UNROLL [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:112:0: warning: ignoring #pragma HLS UNROLL [-Wunknown-pragmas]
+000-                 #pragma HLS UNROLL
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp146-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:146:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp150-1-1ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:150:0: warning: ignoring #pragma HLS DATAFLOW [-Wunknown-pragmas]
+000-         #pragma HLS DATAFLOW
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp166-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:166:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gaussian_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp167-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:167:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gradx_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp168-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:168:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gradx1_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp169-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:169:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gradx2_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp170-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:170:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=grady_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp171-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:171:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=grady1_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp172-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:172:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=grady2_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp173-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:173:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=nms_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp177-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:177:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-             #pragma HLS STREAM variable=phase_mat.data depth=TC1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp178-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:178:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-             #pragma HLS STREAM variable=magnitude_mat.data depth=TC2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp210-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:210:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-             #pragma HLS STREAM variable=phase_mat.data depth=TC1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp211-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:211:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-             #pragma HLS STREAM variable=magnitude_mat.data depth=TC2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp215-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:215:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gaussian_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp216-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:216:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gradx_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp217-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:217:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gradx1_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp218-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:218:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=gradx2_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp219-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:219:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=grady_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp220-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:220:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=grady1_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp221-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:221:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=grady2_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp222-1-1ignoring #pragma HLS STREAM [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:222:0: warning: ignoring #pragma HLS STREAM [-Wunknown-pragmas]
+000-         #pragma HLS STREAM variable=nms_mat.data depth=2
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp284-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:284:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE OFF
+000- ^
+000-In file included from ../src/xf_canny_config.h:26:0,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp37-1-1"MIN" redefined [enabled by default]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:37:0: warning: "MIN" redefined [enabled by default]
+000- #define MIN(x, y) (((x) < (y)) ? (x) : (y))
+000- ^
+000-In file included from /usr/include/opencv2/core/core_c.h:47:0,
+000-                 from /usr/include/opencv2/opencv.hpp:46,
+000-                 from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_headers.hpp:23,
+000-                 from ../src/xf_canny_tb.cpp:17:
+000/lane_detector_v2/Emulation-SW284-1-1this is the location of the previous definition0-/usr/include/opencv2/core/types_c.h:284:0: note: this is the location of the previous definition
+000- #  define MIN(a,b)  ((a) > (b) ? (b) : (a))
+000- ^
+000-In file included from ../src/xf_canny_config.h:26:0,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp54-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:54:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp87-1-1ignoring #pragma HLS inline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:87:0: warning: ignoring #pragma HLS inline [-Wunknown-pragmas]
+000-     #pragma HLS inline off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp96-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:96:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp106-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:106:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp113-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:113:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp123-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:123:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp130-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:130:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp140-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:140:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-         #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp162-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:162:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-     #pragma HLS array_partition variable=arr1 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp163-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:163:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-     #pragma HLS array_partition variable=arr2 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp164-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:164:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-     #pragma HLS array_partition variable=arr4 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp169-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:169:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-     #pragma HLS array_partition variable=arr3 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp170-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:170:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-     #pragma HLS array_partition variable=arr5 complete
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp179-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:179:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-             #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp180-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:180:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-             #pragma HLS loop_tripcount min=38 max=38
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp192-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:192:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-                      #pragma HLS loop_tripcount min=480 max=480
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp193-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:193:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                      #pragma HLS pipeline II=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp194-1-1ignoring #pragma HLS loop_flatten [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:194:0: warning: ignoring #pragma HLS loop_flatten [-Wunknown-pragmas]
+000-                      #pragma HLS loop_flatten off
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp195-1-1ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:195:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+000-                      #pragma HLS DEPENDENCE variable=arr1 inter false
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp196-1-1ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:196:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+000-                      #pragma HLS DEPENDENCE variable=arr2 inter false
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp202-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:202:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp203-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:203:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-                 #pragma HLS loop_tripcount min=38 max=38
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp216-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:216:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp217-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:217:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-                 #pragma HLS loop_tripcount min=38 max=38
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp245-1-1ignoring #pragma HLS unroll [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:245:0: warning: ignoring #pragma HLS unroll [-Wunknown-pragmas]
+000-                 #pragma HLS unroll
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp246-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:246:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-                 #pragma HLS loop_tripcount min=38 max=38
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp268-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:268:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000- #pragma HLS INLINE
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp287-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:287:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-         #pragma HLS RESOURCE variable=iBuff core=RAM_T2P_URAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp288-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:288:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-         #pragma HLS array_partition variable=iBuff dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp292-1-1ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:292:0: warning: ignoring #pragma HLS RESOURCE [-Wunknown-pragmas]
+000-         #pragma HLS RESOURCE variable=iBuff core=RAM_T2P_BRAM
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp293-1-1ignoring #pragma HLS array_partition [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:293:0: warning: ignoring #pragma HLS array_partition [-Wunknown-pragmas]
+000-         #pragma HLS array_partition variable=iBuff dim=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp333-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:333:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-                 #pragma HLS loop_tripcount min=16200 max=16800
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp334-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:334:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline II=1
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp335-1-1ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:335:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+000-                 #pragma HLS DEPENDENCE variable=iBuff inter false
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp336-1-1ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:336:0: warning: ignoring #pragma HLS DEPENDENCE [-Wunknown-pragmas]
+000-                 #pragma HLS DEPENDENCE variable=iBuff intra false
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp388-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:388:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-                 #pragma HLS loop_tripcount min=16200 max=16800
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp389-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:389:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-                 #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp415-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:415:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-         #pragma HLS loop_tripcount min=HEIGHT max=HEIGHT
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp419-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:419:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp420-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:420:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-             #pragma HLS loop_tripcount min=RAM_ROW_DEPTH max=RAM_ROW_DEPTH
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp430-1-1ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:430:0: warning: ignoring #pragma HLS loop_tripcount [-Wunknown-pragmas]
+000-             #pragma HLS loop_tripcount min=WIDTH/8 max=WIDTH/8
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp431-1-1ignoring #pragma HLS pipeline [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:431:0: warning: ignoring #pragma HLS pipeline [-Wunknown-pragmas]
+000-             #pragma HLS pipeline
+000- ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp454-1-1ignoring #pragma HLS INLINE [-Wunknown-pragmas]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:454:0: warning: ignoring #pragma HLS INLINE [-Wunknown-pragmas]
+000-     #pragma HLS INLINE
+000- ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:31:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: In function 'char xf::cv::IdentifySignBits(ap_int<24>)':
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3113-1-1label 'signBitsLoop' defined but not used [-Wunused-label]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3113:1: warning: label 'signBitsLoop' defined but not used [-Wunused-label]
+000- signBitsLoop:
+000- ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: In function 'short unsigned int xf::cv::Inverse8(unsigned char, int, char*)':
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3135-1-1unused variable 'index' [-Wunused-variable]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3135:18: warning: unused variable 'index' [-Wunused-variable]
+000-     unsigned int index;
+000-                  ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: In function 'void xf::cv::findInverse24(ap_int<24>&, int&, int&, unsigned int&, int*, int*)':
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3174-1-1unused variable 'N1' [-Wunused-variable]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3174:13: warning: unused variable 'N1' [-Wunused-variable]
+000-     int M1, N1, leftover_bits = 0;
+000-             ^
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: In function 'long unsigned int xf::cv::DivideYByX24(ap_int24_t, ap_int24_t, int, int, int*, int*)':
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3213-1-1unused variable 'N2' [-Wunused-variable]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3213:17: warning: unused variable 'N2' [-Wunused-variable]
+000-     int N1 = 0, N2 = 0;
+000-                 ^
+000-../src/xf_canny_tb.cpp: In function 'int main(int, char**)':
+000/lane_detector_v2/src/xf_canny_tb.cpp48-1-1unused variable 'img_path' [-Wunused-variable]1-../src/xf_canny_tb.cpp:48:10: warning: unused variable 'img_path' [-Wunused-variable]
+000-     char img_path[1000];
+000-          ^
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_headers.hpp:28:0,
+000-                 from ../src/xf_canny_tb.cpp:17:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp: In function 'void xf::cv::analyzeDiff(cv::Mat&, int, float&)':
+000/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp149-1-1'v_tmp' may be used uninitialized in this function [-Wmaybe-uninitialized]1-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_sw_utils.hpp:149:21: warning: 'v_tmp' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-                 int v_tmp;
+000-                     ^
+000-../src/xf_canny_tb.cpp: In function 'void AverageGaussian(cv::Mat&, cv::Mat&)':
+000/lane_detector_v2/src/xf_canny_tb.cpp300-1-1'b2' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:300:21: warning: 'b2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     NMSTYPE b0, b1, b2;
+000-                     ^
+000/lane_detector_v2/src/xf_canny_tb.cpp290-1-1'b1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:290:18: warning: 'b1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     int g1 = (t1 + b1 + m0 + m2) << 1;
+000-                  ^
+000/lane_detector_v2/src/xf_canny_tb.cpp300-1-1'b1' was declared here0-../src/xf_canny_tb.cpp:300:17: note: 'b1' was declared here
+000-     NMSTYPE b0, b1, b2;
+000-                 ^
+000/lane_detector_v2/src/xf_canny_tb.cpp300-1-1'b0' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:300:13: warning: 'b0' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     NMSTYPE b0, b1, b2;
+000-             ^
+000/lane_detector_v2/src/xf_canny_tb.cpp299-1-1'm2' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:299:21: warning: 'm2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     NMSTYPE m0, m1, m2;
+000-                     ^
+000/lane_detector_v2/src/xf_canny_tb.cpp291-1-1'm1' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:291:17: warning: 'm1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     int g2 = m1 << 2;
+000-                 ^
+000/lane_detector_v2/src/xf_canny_tb.cpp299-1-1'm1' was declared here0-../src/xf_canny_tb.cpp:299:17: note: 'm1' was declared here
+000-     NMSTYPE m0, m1, m2;
+000-                 ^
+000/lane_detector_v2/src/xf_canny_tb.cpp299-1-1'm0' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:299:13: warning: 'm0' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     NMSTYPE m0, m1, m2;
+000-             ^
+000-../src/xf_canny_tb.cpp: In function 'void xiHoughLinesstandard(cv::Mat&, std::vector<cv::Vec<float, 2> >&, float, float, int, int, int, int)':
+000/lane_detector_v2/src/xf_canny_tb.cpp528-1-1'min_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:528:39: warning: 'min_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-     int numangle = cvRound((max_theta - min_theta) / theta);
+000-                                       ^
+000/lane_detector_v2/src/xf_canny_tb.cpp528-1-1'max_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]1-../src/xf_canny_tb.cpp:528:39: warning: 'max_theta' may be used uninitialized in this function [-Wmaybe-uninitialized]
+000-In file included from /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:31:0,
+000-                 from ../src/xf_canny_config.h:25,
+000-                 from ../src/xf_canny_tb.cpp:18:
+000-/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h: At global scope:
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2679-1-1'xf::cv::sin_fix_lut' defined but not used [-Wunused-variable]1xf::cv::sin_fix_lut/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2679:23: warning: 'xf::cv::sin_fix_lut' defined but not used [-Wunused-variable]
+000- static unsigned short sin_fix_lut[1572] = {
+000-                       ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2780-1-1'xf::cv::cos_fix_lut' defined but not used [-Wunused-variable]1xf::cv::cos_fix_lut/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2780:23: warning: 'xf::cv::cos_fix_lut' defined but not used [-Wunused-variable]
+000- static unsigned short cos_fix_lut[1572] = {
+000-                       ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h2924-1-1'unsigned int xf::cv::Inverse32(short unsigned int, int, char*)' defined but not used [-Wunused-function]1unsigned int xf::cv::Inverse32(short unsigned int, int, char*)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:2924:21: warning: 'unsigned int xf::cv::Inverse32(short unsigned int, int, char*)' defined but not used [-Wunused-function]
+000- static unsigned int Inverse32(unsigned short x, int M, char* N) {
+000-                     ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3228-1-1'short int xf::cv::Atan2LookupFP(short int, short int, int, int, int, int)' defined but not used [-Wunused-function]1short int xf::cv::Atan2LookupFP(short int, short int, int, int, int, int)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3228:14: warning: 'short int xf::cv::Atan2LookupFP(short int, short int, int, int, int, int)' defined but not used [-Wunused-function]
+000- static short Atan2LookupFP(short xs, short ys, int M1, int N1, int M2, int N2) {
+000-              ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3292-1-1'short int xf::cv::Atan2LUT8(short int, short int, int, int, int, int)' defined but not used [-Wunused-function]1short int xf::cv::Atan2LUT8(short int, short int, int, int, int, int)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3292:14: warning: 'short int xf::cv::Atan2LUT8(short int, short int, int, int, int, int)' defined but not used [-Wunused-function]
+000- static short Atan2LUT8(short xs, short ys, int M1, int N1, int M2, int N2) {
+000-              ^
+000/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h3357-1-1'short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)' defined but not used [-Wunused-function]1short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/core/xf_math.h:3357:14: warning: 'short int xf::cv::Atan2LookupFP24(ap_int24_t, ap_int24_t, int, int, int, int)' defined but not used [-Wunused-function]
+000- static short Atan2LookupFP24(ap_int24_t xs, ap_int24_t ys, int M1, int N1, int M2, int N2) {
+000-              ^
+000-g++ -o "lane_detector_v2" libs/xf_opencv/ext/xcl2/xcl2.o src/helper_functions.o src/xf_canny_tb.o -lxml2 -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_video -lopencv_calib3d -lopencv_highgui -lxilinxopencl -lpthread -lrt -lstdc++ -lmpfr -lgmp -lhlsmc++-GCC46 -lIp_floating_point_v7_0_bitacc_cmodel -lIp_xfft_v9_1_bitacc_cmodel -lIp_fir_compiler_v7_2_bitacc_cmodel -lIp_dds_compiler_v6_0_bitacc_cmodel -L/opt/xilinx/xrt/lib/ -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fpo_v7_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/lib/csim -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/dds_v6_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fir_v7_0 -L/opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1 -Wl,-rpath-link,/opt/xilinx/xrt/lib -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/lib/csim -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fpo_v7_0 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/fir_v7_0 -Wl,-rpath,/opt/Xilinx/Vivado/2020.1/lnx64/tools/dds_v6_0
+000/lane_detector_v2/Emulation-SW0-1-1libgmp.so.11, needed by /opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1/libIp_xfft_v9_1_bitacc_cmodel.so, may conflict with libgmp.so.71-/bin/ld: warning: libgmp.so.11, needed by /opt/Xilinx/Vivado/2020.1/lnx64/tools/fft_v9_1/libIp_xfft_v9_1_bitacc_cmodel.so, may conflict with libgmp.so.7
+000-/opt/Xilinx/Vitis/2020.1/bin/v++ --package --config package.cfg krnl_canny.xclbin
+000-Option Map File Used: '/opt/Xilinx/Vitis/2020.1/data/vitis/vpp/optMap.xml'
+000-
+000-****** v++ v2020.1 (64-bit)
+000-  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+000-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+000-
+000-INFO: [v++ 60-1306] Additional information associated with this v++ package can be found at:
+000-	Reports: /home/centos/labs/lane_detector_v2/Emulation-SW/package.build/reports/package
+000-	Log files: /home/centos/labs/lane_detector_v2/Emulation-SW/package.build/logs/package
+000-INFO: [v++ 60-1657] Initializing dispatch client.
+000-Running Dispatch Server on port:39259
+000-INFO: [v++ 60-1548] Creating build summary session with primary output ./v++.package_summary, at Fri Jan 15 00:10:26 2021
+000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Jan 15 00:10:26 2021
+000-INFO: [v++ 60-895]   Target platform: /home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+000-INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+000-INFO: [v++ 60-2256] Packaging for software emulation
+000-INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+000-    vitis_analyzer ./v++.package_summary 
+000-INFO: [v++ 60-791] Total elapsed time: 0h 0m 14s
+000-INFO: [v++ 60-1653] Closing dispatch client.
+00255-
+00:10:30 Build Finished (took 21s.516ms)
+

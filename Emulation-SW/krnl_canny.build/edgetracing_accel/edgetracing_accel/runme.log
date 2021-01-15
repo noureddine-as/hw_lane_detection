@@ -1,0 +1,80 @@
+
+*** Running vitis_hls
+    with args -f edgetracing_accel.tcl -messageDb vitis_hls.pb
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis/2020.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-55-64.ec2.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Jan 15 00:01:54 UTC 2021
+INFO: [HLS 200-10] On os "CentOS Linux release 7.7.1908 (Core)"
+INFO: [HLS 200-10] In directory '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel'
+Sourcing Tcl script 'edgetracing_accel.tcl'
+INFO: [HLS 200-10] Creating and opening project '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/edgetracing_accel'.
+INFO: [HLS 200-10] Adding design file '/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/edgetracing_accel/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1505.html
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.08ns.
+INFO: [HLS 200-10] Analyzing design file '/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'index': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1183:102
+WARNING: [HLS 207-5324] unused parameter 'index': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1386:34
+WARNING: [HLS 207-5324] unused parameter 'win_size': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:23:33
+WARNING: [HLS 207-5324] unused parameter 'win_size': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:56:33
+WARNING: [HLS 207-5324] unused parameter 'win_size': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:90:30
+WARNING: [HLS 207-5324] unused parameter 'win_size': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:116:30
+WARNING: [HLS 207-1017] unknown pragma ignored: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:437:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:438:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:442:9
+WARNING: [HLS 207-5324] unused parameter '_border_type': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_sobel.hpp:524:18
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_averagegaussianmask.hpp:191:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:487:9
+WARNING: [HLS 207-1536] 'false' in '#pragma HLS dependence' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:195:44
+WARNING: [HLS 207-1536] 'false' in '#pragma HLS dependence' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:196:44
+WARNING: [HLS 207-5324] unused parameter 'width': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:154:23
+WARNING: [HLS 207-5324] unused parameter 'height': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:155:23
+WARNING: [HLS 207-5324] unused parameter 'bramsetsval': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:156:18
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:287:9
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:292:9
+WARNING: [HLS 207-1536] 'false' in '#pragma HLS dependence' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:335:45
+WARNING: [HLS 207-1536] 'false' in '#pragma HLS dependence' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:336:45
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::init(int, int, bool)' into 'xf::cv::Mat<8, 512, 512, 32, 2>::Mat(int, int, void*)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:628:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<0, 512, 512, 8, 2>::init(int, int, bool)' into 'xf::cv::Mat<0, 512, 512, 8, 2>::Mat(int, int, void*)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:628:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::applyEqn(ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&)' into 'void xf::cv::PixelProcessNew<1>(ap_uint<68>, ap_uint<68>, ap_uint<68>, ap_uint<68>&, ap_uint<68>&, ap_uint<68>&)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:142:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::applyEqn(ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&)' into 'void xf::cv::PixelProcessNew<1>(ap_uint<68>, ap_uint<68>, ap_uint<68>, ap_uint<68>&, ap_uint<68>&, ap_uint<68>&)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:125:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::applyEqn(ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&, ap_uint<2>&)' into 'void xf::cv::PixelProcessNew<1>(ap_uint<68>, ap_uint<68>, ap_uint<68>, ap_uint<68>&, ap_uint<68>&, ap_uint<68>&)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:108:2)
+INFO: [HLS 214-131] Inlining function 'void xf::cv::xfEdgeTracing<8, 0, 32, 8, 512, 512, false>(xf::cv::Mat<0, 512, 512, 8, 2>&, xf::cv::Mat<8, 512, 512, 32, 2>&, unsigned short, unsigned short)' into 'void xf::cv::EdgeTracing<8, 0, 512, 512, 32, 8, false>(xf::cv::Mat<8, 512, 512, 32, 2>&, xf::cv::Mat<0, 512, 512, 8, 2>&)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:456:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::Mat(int, int, void*)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:35:47)
+INFO: [HLS 214-131] Inlining function 'void xf::cv::EdgeTracing<8, 0, 512, 512, 32, 8, false>(xf::cv::Mat<8, 512, 512, 32, 2>&, xf::cv::Mat<0, 512, 512, 8, 2>&)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:38:5)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<0, 512, 512, 8, 2>::Mat(int, int, void*)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:36:46)
+INFO: [HLS 214-186] Unrolling loop 'RD_INIT' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:177:9) in function 'xf::cv::TopDown<5, 1, 1024>' completely with a factor of 5 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:177:9)
+INFO: [HLS 214-186] Unrolling loop 'RD' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:200:13) in function 'xf::cv::TopDown<5, 1, 1024>' completely with a factor of 5 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:200:13)
+INFO: [HLS 214-186] Unrolling loop 'RD1' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:214:13) in function 'xf::cv::TopDown<5, 1, 1024>' completely with a factor of 1 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:214:13)
+INFO: [HLS 214-186] Unrolling loop 'RD2' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:243:13) in function 'xf::cv::TopDown<5, 1, 1024>' completely with a factor of 5 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:243:13)
+INFO: [HLS 214-186] Unrolling loop 'PL_3' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:138:5) in function 'xf::cv::PixelProcessNew<1>' completely with a factor of 10 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:138:5)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:128:5) in function 'xf::cv::PixelProcessNew<1>' completely with a factor of 34 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:128:5)
+INFO: [HLS 214-186] Unrolling loop 'PL_2' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:121:5) in function 'xf::cv::PixelProcessNew<1>' completely with a factor of 11 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:121:5)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:111:5) in function 'xf::cv::PixelProcessNew<1>' completely with a factor of 34 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:111:5)
+INFO: [HLS 214-186] Unrolling loop 'PL_1' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:104:5) in function 'xf::cv::PixelProcessNew<1>' completely with a factor of 11 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:104:5)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:94:5) in function 'xf::cv::PixelProcessNew<1>' completely with a factor of 34 (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_edge_tracing.hpp:94:5)
+INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::read(int)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::write(int, ap_uint<64>)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::read(int)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
+INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<0, 512, 512, 8, 2>::write(int, ap_uint<64>)' into 'edgetracing_accel' (/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp:20:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 115356 ; free virtual = 138415
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 115356 ; free virtual = 138415
+INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
+HLS completed successfully
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 15 00:02:53 2021...

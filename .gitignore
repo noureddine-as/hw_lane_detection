@@ -8,8 +8,8 @@
 ##	it might not be complete. In addition, XAPP 1165 should be followed.
 #########
 #Exclude all
-*
-!*/
+# *
+# !*/
 !.gitignore
 ###########################################################################
 ##	VIVADO

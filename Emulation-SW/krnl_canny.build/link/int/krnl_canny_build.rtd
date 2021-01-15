@@ -1,0 +1,235 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "build_metadata": {
+        "dsa": {
+            "vendor": "xilinx",
+            "board_id": "aws-vu9p-f1",
+            "name": "shell-v04261818",
+            "version_major": "201920",
+            "version_minor": "2",
+            "description": "",
+            "generated_by": {
+                "name": "Vivado",
+                "version": "2019.2",
+                "cl": "2708876",
+                "time_stamp": "Tue Apr 28 20:02:31 2020"
+            },
+            "board": {
+                "name": "",
+                "vendor": "amazon",
+                "part": "",
+                "board_part": ""
+            },
+            "feature_roms": [
+                {
+                    "time_epoch": "0"
+                }
+            ]
+        },
+        "xclbin": {
+            "generated_by": {
+                "name": "v++",
+                "version": "2020.1",
+                "cl": "2902540",
+                "time_stamp": "Wed May 27 19:54:35 MDT 2020",
+                "options": "\/opt\/Xilinx\/Vitis\/2020.1\/bin\/unwrapped\/lnx64.o\/v++ --target sw_emu --link --config common-config.cfg --config krnl_canny-link.cfg -okrnl_canny.xclbin krnl_canny.build\/canny_accel.xo krnl_canny.build\/edgetracing_accel.xo "
+            },
+            "user_regions": [
+                {
+                    "name": "OCL_REGION_0",
+                    "type": "clc_region",
+                    "instance_path": "WRAPPER_INST\/CL",
+                    "base_address": "",
+                    "kernels": [
+                        {
+                            "name": "edgetracing_accel",
+                            "ports": [
+                                {
+                                    "name": "M_AXI_GMEM3",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "64",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI_GMEM4",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "64",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "S_AXI_CONTROL",
+                                    "mode": "slave",
+                                    "range": "0x1000",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "name": "img_inp",
+                                    "address_qualifier": "1",
+                                    "id": "0",
+                                    "port": "M_AXI_GMEM3",
+                                    "size": "0x8",
+                                    "offset": "0x10",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "img_out",
+                                    "address_qualifier": "1",
+                                    "id": "1",
+                                    "port": "M_AXI_GMEM4",
+                                    "size": "0x8",
+                                    "offset": "0x1C",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "rows",
+                                    "address_qualifier": "0",
+                                    "id": "2",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x28",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                },
+                                {
+                                    "name": "cols",
+                                    "address_qualifier": "0",
+                                    "id": "3",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x30",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                }
+                            ],
+                            "instances": [
+                                {
+                                    "name": "edgetracing_accel_1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "canny_accel",
+                            "ports": [
+                                {
+                                    "name": "M_AXI_GMEM1",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "64",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI_GMEM2",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "64",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "S_AXI_CONTROL",
+                                    "mode": "slave",
+                                    "range": "0x1000",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "name": "img_inp",
+                                    "address_qualifier": "1",
+                                    "id": "0",
+                                    "port": "M_AXI_GMEM1",
+                                    "size": "0x8",
+                                    "offset": "0x10",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "img_out",
+                                    "address_qualifier": "1",
+                                    "id": "1",
+                                    "port": "M_AXI_GMEM2",
+                                    "size": "0x8",
+                                    "offset": "0x1C",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "rows",
+                                    "address_qualifier": "0",
+                                    "id": "2",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x28",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                },
+                                {
+                                    "name": "cols",
+                                    "address_qualifier": "0",
+                                    "id": "3",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x30",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                },
+                                {
+                                    "name": "low_threshold",
+                                    "address_qualifier": "0",
+                                    "id": "4",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x38",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                },
+                                {
+                                    "name": "high_threshold",
+                                    "address_qualifier": "0",
+                                    "id": "5",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x40",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                }
+                            ],
+                            "instances": [
+                                {
+                                    "name": "canny_accel_1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

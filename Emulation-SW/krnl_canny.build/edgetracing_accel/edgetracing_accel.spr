@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="edgetracing_accel" dir="">
+  <FileSets>
+    <FileSet Name="kernel_edgetracing_accel" Type="DesignSrcs">
+      <File Path="/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

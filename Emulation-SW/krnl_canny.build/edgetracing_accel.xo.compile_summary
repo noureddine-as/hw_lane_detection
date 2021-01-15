@@ -1,0 +1,172 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jan 15 00:01:36 2021",
+ "timestampMillis": "1610668896462",
+ "buildStep": {
+  "cmdId": "91f20a51-61e9-44d8-a21f-839438fc2375",
+  "name": "v++",
+  "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src -D__SDA_MEM_MAP__ --config common-config.cfg --config krnl_canny-edgetracing_accel-compile.cfg -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/home/centos/labs/lane_detector_v2/src/build -okrnl_canny.build/edgetracing_accel.xo ../src/xf_edgetracing_accel.cpp ",
+  "args": [
+   "--target",
+   "sw_emu",
+   "--compile",
+   "-I../src",
+   "-D__SDA_MEM_MAP__",
+   "--config",
+   "common-config.cfg",
+   "--config",
+   "krnl_canny-edgetracing_accel-compile.cfg",
+   "-I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include",
+   "-I/home/centos/labs/lane_detector_v2/src/build",
+   "-okrnl_canny.build/edgetracing_accel.xo",
+   "../src/xf_edgetracing_accel.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/common-config.cfg",
+    "content": "platform=/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\n"
+   },
+   {
+    "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny-edgetracing_accel-compile.cfg",
+    "content": "kernel=edgetracing_accel\ndebug=1\nmessageDb=krnl_canny.build/edgetracing_accel.mdb\ntemp_dir=krnl_canny.build\nreport_dir=krnl_canny.build/reports\nlog_dir=krnl_canny.build/logs\n\n[advanced]\nmisc=solution_name=edgetracing_accel\n"
+   }
+  ],
+  "cwd": "/home/centos/labs/lane_detector_v2/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 15 00:01:36 2021",
+ "timestampMillis": "1610668896463",
+ "status": {
+  "cmdId": "91f20a51-61e9-44d8-a21f-839438fc2375",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jan 15 00:01:51 2021",
+ "timestampMillis": "1610668911060",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "edgetracing_accel",
+     "file": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel.xo",
+     "reports": []
+    },
+    "sources": [
+     "/home/centos/labs/lane_detector_v2/src/xf_edgetracing_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS"
+   }
+  ],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jan 15 00:01:51 2021",
+ "timestampMillis": "1610668911064",
+ "buildStep": {
+  "cmdId": "bb7990dd-1af2-4987-9573-be01e91f10c9",
+  "name": "vitis_hls",
+  "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/edgetracing_accel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/edgetracing_accel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/labs/lane_detector_v2/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 15 00:01:51 2021",
+ "timestampMillis": "1610668911065",
+ "status": {
+  "cmdId": "bb7990dd-1af2-4987-9573-be01e91f10c9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 15 00:02:53 2021",
+ "timestampMillis": "1610668973229",
+ "status": {
+  "cmdId": "bb7990dd-1af2-4987-9573-be01e91f10c9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jan 15 00:02:53 2021",
+ "timestampMillis": "1610668973238",
+ "report": {
+  "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jan 15 00:02:53 2021",
+ "timestampMillis": "1610668973239",
+ "report": {
+  "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 15 00:02:53 2021",
+ "timestampMillis": "1610668973239",
+ "status": {
+  "cmdId": "91f20a51-61e9-44d8-a21f-839438fc2375",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

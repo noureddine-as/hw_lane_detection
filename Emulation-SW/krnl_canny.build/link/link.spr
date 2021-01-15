@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_canny_accel" Type="DesignSrcs">
+      <File Path="/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/xo/canny_accel/canny_accel/cpu_sources/xf_canny_accel.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="kernel_edgetracing_accel" Type="DesignSrcs">
+      <File Path="/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/xo/edgetracing_accel/edgetracing_accel/cpu_sources/xf_edgetracing_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>
