@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: edgetracing_accel
+Log file: /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/vitis_hls.log
