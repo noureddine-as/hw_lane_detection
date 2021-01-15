@@ -9,6 +9,10 @@
       <File Path="/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/xo/edgetracing_accel/edgetracing_accel/cpu_sources/xf_edgetracing_accel.cpp"/>
       <Config/>
     </FileSet>
+    <FileSet Name="kernel_houghlines_accel" Type="DesignSrcs">
+      <File Path="/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/xo/houghlines_accel/houghlines_accel/cpu_sources/xf_houghlines_accel.cpp"/>
+      <Config/>
+    </FileSet>
   </FileSets>
   <Runs/>
 </project>

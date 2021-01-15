@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Jan 15 00:40:11 2021",
- "timestampMillis": "1610671211795",
+ "dateTimestamp": "Fri Jan 15 02:00:41 2021",
+ "timestampMillis": "1610676041949",
  "buildStep": {
-  "cmdId": "256b5cc2-0780-4aba-ac29-3cce188f7350",
+  "cmdId": "0ff775bd-a343-42fb-917b-9518836c6b9c",
   "name": "v++",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/canny_accel/canny_accel.steps.log",
   "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src --config common-config.cfg --config krnl_canny-canny_accel-compile.cfg -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/home/centos/labs/lane_detector_v2/src/build -okrnl_canny.build/canny_accel.xo ../src/xf_canny_accel.cpp ",
@@ -47,10 +47,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:40:11 2021",
- "timestampMillis": "1610671211795",
+ "dateTimestamp": "Fri Jan 15 02:00:41 2021",
+ "timestampMillis": "1610676041950",
  "status": {
-  "cmdId": "256b5cc2-0780-4aba-ac29-3cce188f7350",
+  "cmdId": "0ff775bd-a343-42fb-917b-9518836c6b9c",
   "state": "CS_RUNNING"
  }
 }
@@ -58,8 +58,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Jan 15 00:40:26 2021",
- "timestampMillis": "1610671226364",
+ "dateTimestamp": "Fri Jan 15 02:00:56 2021",
+ "timestampMillis": "1610676056835",
  "buildSummary": {
   "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
   "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
@@ -91,10 +91,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:40:26 2021",
- "timestampMillis": "1610671226368",
+ "dateTimestamp": "Fri Jan 15 02:00:56 2021",
+ "timestampMillis": "1610676056851",
  "buildStep": {
-  "cmdId": "053e37a2-3978-4590-841a-1ccbdb591801",
+  "cmdId": "628b16e2-5bc2-43af-bde4-b2af56682fb0",
   "name": "vitis_hls",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/canny_accel/canny_accel/vitis_hls.log",
   "commandLine": "vitis_hls -f /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/canny_accel/canny_accel/canny_accel.tcl -messageDb vitis_hls.pb",
@@ -113,10 +113,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:40:26 2021",
- "timestampMillis": "1610671226368",
+ "dateTimestamp": "Fri Jan 15 02:00:56 2021",
+ "timestampMillis": "1610676056852",
  "status": {
-  "cmdId": "053e37a2-3978-4590-841a-1ccbdb591801",
+  "cmdId": "628b16e2-5bc2-43af-bde4-b2af56682fb0",
   "state": "CS_RUNNING"
  }
 }
@@ -124,10 +124,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:41:34 2021",
- "timestampMillis": "1610671294607",
+ "dateTimestamp": "Fri Jan 15 02:02:07 2021",
+ "timestampMillis": "1610676127317",
  "status": {
-  "cmdId": "053e37a2-3978-4590-841a-1ccbdb591801",
+  "cmdId": "628b16e2-5bc2-43af-bde4-b2af56682fb0",
   "state": "CS_PASSED"
  }
 }
@@ -135,8 +135,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:41:34 2021",
- "timestampMillis": "1610671294616",
+ "dateTimestamp": "Fri Jan 15 02:02:07 2021",
+ "timestampMillis": "1610676127326",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.html",
   "name": "",
@@ -148,8 +148,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:41:34 2021",
- "timestampMillis": "1610671294617",
+ "dateTimestamp": "Fri Jan 15 02:02:07 2021",
+ "timestampMillis": "1610676127327",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.pb",
   "name": "",
@@ -161,10 +161,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:41:34 2021",
- "timestampMillis": "1610671294617",
+ "dateTimestamp": "Fri Jan 15 02:02:07 2021",
+ "timestampMillis": "1610676127327",
  "status": {
-  "cmdId": "256b5cc2-0780-4aba-ac29-3cce188f7350",
+  "cmdId": "0ff775bd-a343-42fb-917b-9518836c6b9c",
   "state": "CS_PASSED"
  }
 }

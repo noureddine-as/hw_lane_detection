@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="houghlines_accel" dir="">
+  <FileSets>
+    <FileSet Name="kernel_houghlines_accel" Type="DesignSrcs">
+      <File Path="/home/centos/labs/lane_detector_v2/src/xf_houghlines_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

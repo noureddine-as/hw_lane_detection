@@ -4,21 +4,67 @@
     <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
       <binaryContainers name="krnl_canny">
         <kernels name="canny_accel" sourceFile="src/xf_canny_accel.cpp">
-          <computeUnits name="canny_accel_1" slr=""/>
+          <computeUnits name="canny_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="low_threshold" memory=""/>
+            <args name="high_threshold" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="low_threshold"/>
+          <args name="high_threshold"/>
         </kernels>
         <kernels name="edgetracing_accel" sourceFile="src/xf_edgetracing_accel.cpp" xoccOptions="-D__SDA_MEM_MAP__">
-          <computeUnits name="edgetracing_accel_1" slr=""/>
+          <computeUnits name="edgetracing_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
         </kernels>
+        <kernels name="houghlines_accel" sourceFile="src/xf_houghlines_accel.cpp"/>
       </binaryContainers>
     </configBuildOptions>
     <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
       <binaryContainers name="krnl_canny">
         <kernels name="canny_accel" sourceFile="src/xf_canny_accel.cpp">
-          <computeUnits name="canny_accel_1" slr=""/>
+          <computeUnits name="canny_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="low_threshold" memory=""/>
+            <args name="high_threshold" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="low_threshold"/>
+          <args name="high_threshold"/>
         </kernels>
         <kernels name="edgetracing_accel" sourceFile="src/xf_edgetracing_accel.cpp" xoccOptions="-D__SDA_MEM_MAP__">
-          <computeUnits name="edgetracing_accel_1" slr=""/>
+          <computeUnits name="edgetracing_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
         </kernels>
+        <kernels name="houghlines_accel" sourceFile="src/xf_houghlines_accel.cpp"/>
       </binaryContainers>
     </lastBuildOptions>
   </configuration>
@@ -26,10 +72,35 @@
     <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
       <binaryContainers name="krnl_canny">
         <kernels name="canny_accel" sourceFile="src/xf_canny_accel.cpp">
-          <computeUnits name="canny_accel_1" slr=""/>
+          <computeUnits name="canny_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="low_threshold" memory=""/>
+            <args name="high_threshold" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="low_threshold"/>
+          <args name="high_threshold"/>
         </kernels>
         <kernels name="edgetracing_accel" sourceFile="src/xf_edgetracing_accel.cpp" xoccOptions="-D__SDA_MEM_MAP__">
-          <computeUnits name="edgetracing_accel_1" slr=""/>
+          <computeUnits name="edgetracing_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+        </kernels>
+        <kernels name="houghlines_accel" sourceFile="src/xf_houghlines_accel.cpp">
+          <computeUnits name="houghlines_accel_1" slr=""/>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
@@ -38,10 +109,35 @@
     <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
       <binaryContainers name="krnl_canny">
         <kernels name="canny_accel" sourceFile="src/xf_canny_accel.cpp">
-          <computeUnits name="canny_accel_1" slr=""/>
+          <computeUnits name="canny_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+            <args name="low_threshold" memory=""/>
+            <args name="high_threshold" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+          <args name="low_threshold"/>
+          <args name="high_threshold"/>
         </kernels>
         <kernels name="edgetracing_accel" sourceFile="src/xf_edgetracing_accel.cpp" xoccOptions="-D__SDA_MEM_MAP__">
-          <computeUnits name="edgetracing_accel_1" slr=""/>
+          <computeUnits name="edgetracing_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="img_out" master="true" memory=""/>
+            <args name="rows" memory=""/>
+            <args name="cols" memory=""/>
+          </computeUnits>
+          <args name="img_inp" master="true"/>
+          <args name="img_out" master="true"/>
+          <args name="rows"/>
+          <args name="cols"/>
+        </kernels>
+        <kernels name="houghlines_accel" sourceFile="src/xf_houghlines_accel.cpp">
+          <computeUnits name="houghlines_accel_1" slr=""/>
         </kernels>
       </binaryContainers>
     </configBuildOptions>

@@ -1,0 +1,50 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis/2020.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-55-64.ec2.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Jan 15 03:02:07 UTC 2021
+INFO: [HLS 200-10] On os "CentOS Linux release 7.7.1908 (Core)"
+INFO: [HLS 200-10] In directory '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/houghlines_accel/houghlines_accel'
+Sourcing Tcl script 'houghlines_accel.tcl'
+INFO: [HLS 200-10] Creating and opening project '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/houghlines_accel/houghlines_accel/houghlines_accel'.
+INFO: [HLS 200-10] Adding design file '/home/centos/labs/lane_detector_v2/src/xf_houghlines_accel.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/houghlines_accel/houghlines_accel/houghlines_accel/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1505.html
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.08ns.
+INFO: [HLS 200-10] Analyzing design file '/home/centos/labs/lane_detector_v2/src/xf_houghlines_accel.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'index': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:655:87
+WARNING: [HLS 207-5324] unused parameter 'index': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:675:60
+WARNING: [HLS 207-5324] unused parameter 'index': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1183:102
+WARNING: [HLS 207-5324] unused parameter 'index': /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1386:34
+WARNING: [HLS 207-1536] 'false' in '#pragma HLS dependence' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:289:36
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: /home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:665:9
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::stream()' into 'hls::stream<ap_uint<8>, 2>::stream()' (/opt/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:188:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 2>::stream()' into 'xf::cv::Mat<0, 512, 512, 1, 2>::Mat(int, int)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:443:5)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<0, 512, 512, 1, 2>::init(int, int, bool)' into 'xf::cv::Mat<0, 512, 512, 1, 2>::Mat(int, int)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:642:2)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::write(ap_uint<8> const&)' into 'xf::cv::MMIterIn<8, 0, 512, 512, 1, 2>::Axi2AxiStream(ap_uint<8>*, hls::stream<ap_uint<8>, 0>&, ap_uint<19>&)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1008:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read(ap_uint<8>&)' into 'hls::stream<ap_uint<8>, 0>::read()' (/opt/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::write(ap_uint<8> const&)' into 'xf::cv::MMIterIn<8, 0, 512, 512, 1, 2>::AxiStream2MatStream(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 2>&, int, int, int)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1060:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read()' into 'xf::cv::MMIterIn<8, 0, 512, 512, 1, 2>::AxiStream2MatStream(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 2>&, int, int, int)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1053:27)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::stream()' into 'xf::cv::MMIterIn<8, 0, 512, 512, 1, 2>::Axi2Mat(ap_uint<8>*, hls::stream<ap_uint<8>, 2>&, int, int)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:1114:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read()' into 'xf::cv::Mat<0, 512, 512, 1, 2>::read(int)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_structs.hpp:657:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<0, 512, 512, 1, 2>::Mat(int, int)' into 'houghlines_accel' (/home/centos/labs/lane_detector_v2/src/xf_houghlines_accel.cpp:37:43)
+INFO: [HLS 214-178] Inlining function 'xf::cv::MMIterIn<8, 0, 512, 512, 1, 2>::Array2xfMat(ap_uint<8>*, xf::cv::Mat<0, 512, 512, 1, 2>&)' into 'void xf::cv::Array2xfMat<8, 0, 512, 512, 1>(ap_uint<8>*, xf::cv::Mat<0, 512, 512, 1, 2>&)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:518:0)
+INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<0, 512, 512, 1, 2>::read(int)' into 'void xf::cv::xfVoting<0, 512, 512, 0, 1, 1, 2u, 1u, 180, 725, 0>(xf::cv::Mat<0, 512, 512, 1, 2>&, ap_uint<12> (*) [(725) + (1)], ap_uint<12>, ap_uint<12>)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_houghlines.hpp:155:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 113353 ; free virtual = 137918
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 113353 ; free virtual = 137918
+INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
+HLS completed successfully
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 15 03:02:45 2021...

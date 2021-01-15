@@ -4,7 +4,7 @@ XRT Build Version: 2.6.0 (2020.1)
 Creating a default 'in-memory' xclbin image.
 
 Section: 'BITSTREAM'(0) was successfully added.
-Size   : 2842528 bytes
+Size   : 4547432 bytes
 Format : RAW
 File   : '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny.so'
 WARNING: Skipping CLOCK_FREQ_TOPOLOGY section for count size is zero.
@@ -15,12 +15,12 @@ Format : JSON
 File   : '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_xml.rtd'
 
 Section: 'BUILD_METADATA'(14) was successfully added.
-Size   : 3757 bytes
+Size   : 5554 bytes
 Format : JSON
 File   : '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny_build.rtd'
 
 Section: 'EMBEDDED_METADATA'(2) was successfully added.
-Size   : 4363 bytes
+Size   : 6399 bytes
 Format : RAW
 File   : '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/link/int/krnl_canny.xml'
 
@@ -28,5 +28,5 @@ Section: 'DEBUG_DATA'(4) was successfully added.
 Size   : 0 bytes
 Format : RAW
 File   : '/dev/null'
-Successfully wrote (2856324 bytes) to the output file: /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.xclbin
+Successfully wrote (4566882 bytes) to the output file: /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.xclbin
 Leaving xclbinutil.

@@ -145,7 +145,7 @@ int main(int argc, char** argv) {
     event_sp_edge.getProfilingInfo(CL_PROFILING_COMMAND_START, &startedge);
     event_sp_edge.getProfilingInfo(CL_PROFILING_COMMAND_END, &endedge);
     diff_prof_edge = endedge - startedge;
-    std::cout << "\n Profiling " << (diff_prof_edge / 1000000) << "ms" << std::endl;
+    std::cout << "\n Profiling edge tracing " << (diff_prof_edge / 1000000) << "ms" << std::endl;
 
     // Copying Device result data to Host memory
     q.enqueueReadBuffer(imageFromDeviceedge, CL_TRUE, 0, (height * width), out_img_edge.data);
@@ -192,16 +192,89 @@ int main(int argc, char** argv) {
             "threshold = %f\nNo of Pixels with Error = %d\n",
             minval, maxval, err_per, cnt);
 
-    fprintf(stderr, "kernel done");
+    fprintf(stderr, "kernel done - edge tracing");
     // if (err_per > 2.5f) return 1;
     ///////////////////////////////// HW HOUGH TRANSFORM //////////////////////////////////////////////////
     // Running the HLS accelerated Hough Transform
+    printf("before kernel - houghlines");
 
+    cl::Kernel krnl3(program, "houghlines_accel");
+
+    // OpenCL section:
+    size_t image_in_size_bytes = img_gray.rows * img_gray.cols * sizeof(unsigned char);
+    size_t image_out_size_bytes = LINESMAX * sizeof(float);
+
+    std::vector<float> outputrho(LINESMAX);
+    std::vector<float> outputtheta(LINESMAX);
+
+    cl::Buffer buffer_hough_inImage(context, CL_MEM_READ_ONLY, 	image_in_size_bytes);
+    cl::Buffer buffer_outArrayY(context, CL_MEM_WRITE_ONLY, 	image_out_size_bytes);
+    cl::Buffer buffer_outArrayX(context, CL_MEM_WRITE_ONLY, 	image_out_size_bytes);
+
+    // Set kernel arguments:
+    short hough_threshold = HOUGH_THRESHOLD;
+    short hough_maxlines  = LINESMAX;
+
+	krnl3.setArg(0, buffer_hough_inImage);
+	krnl3.setArg(1, hough_threshold); // u should have a variable here !!
+	krnl3.setArg(2, hough_maxlines);  // u should have a variable here !!
+	krnl3.setArg(3, buffer_outArrayY);
+	krnl3.setArg(4, buffer_outArrayX);
+	krnl3.setArg(5, height);
+	krnl3.setArg(6, width);
+
+	// Initialize the buffers:
+	cl::Event hg_event;
+    printf("before enqueueWriteBuffer - houghlines");
+
+    q.enqueueWriteBuffer(buffer_hough_inImage,      // buffer on the FPGA
+                         CL_TRUE,             // blocking call
+                         0,                   // buffer offset in bytes
+						 image_in_size_bytes, // Size in bytes
+						 out_img_edge.data,            // Pointer to the data to copy
+                         nullptr, &hg_event);
+
+	// Profiling Objects
+	cl_ulong start_hough = 0;
+	cl_ulong end_hough = 0;
+	double diff_prof_hough = 0.0f;
+
+	printf("before enqueueTask - hough transform");
+	// Launch the kernel
+	q.enqueueTask(krnl3, NULL, &hg_event);
+	clWaitForEvents(1, (const cl_event*)&hg_event);
+
+	printf("after enqueueTask - hough transform");
+
+	hg_event.getProfilingInfo(CL_PROFILING_COMMAND_START, &start_hough);
+	hg_event.getProfilingInfo(CL_PROFILING_COMMAND_END, &end_hough);
+	diff_prof_hough = end_hough - start_hough;
+	std::cout << "\n Profiling Hough Transform  " << (diff_prof_hough / 1000000) << "ms" << std::endl;
+
+	// Copying Device result data to Host memory
+	q.enqueueReadBuffer(buffer_outArrayY, // This buffers data will be read
+            			CL_TRUE,          // blocking call
+						0,                // offset
+						image_out_size_bytes,
+						outputrho.data(), // Data will be stored here
+						nullptr, &hg_event);
+
+	q.enqueueReadBuffer(buffer_outArrayX, // This buffers data will be read
+            			CL_TRUE,          // blocking call
+						0,                // offset
+						image_out_size_bytes,
+						outputtheta.data(), // Data will be stored here
+						nullptr, &hg_event);
+
+	q.finish();
+
+	printf("after finish - hough transform");
 
     ///////////////////////////////// SW REFERENCE HOUGH TRANSFORM //////////////////////////////////////////////////
     // Running the reference function:
-    cv::Mat crefxi;
+    cv::Mat crefxi, hlsxi;
     img_gray.copyTo(crefxi); // crefxi is a deep copy of img_gray
+    img_gray.copyTo(hlsxi);
 	std::vector<cv::Vec2f> linesxi;
 
 /*
@@ -227,7 +300,7 @@ int main(int argc, char** argv) {
 	FILE* fpre2 = fopen("ref_houghlines.txt", "w");
 
 	for (size_t i = 0; i < linesxi.size(); i++) {
-		// fprintf(fpre1, "%f %f\n", outputrho[i], outputtheta[i]);
+		fprintf(fpre1, "%f %f\n", outputrho[i], outputtheta[i]);
 		fprintf(fpre2, "%f %f\n", linesxi[i][0], linesxi[i][1]);
 		// Drawing the lines on the image.
 	}
@@ -255,7 +328,7 @@ int main(int argc, char** argv) {
 	}
 
 	// HLS Drawing
-	/*
+
 	for( size_t i = 0; i < linesxi.size(); i++ )
 	{
 		float rho = outputrho[i], theta = outputtheta[i];
@@ -266,12 +339,12 @@ int main(int argc, char** argv) {
 		pt1xi.y = cvRound(y0 + 1500*(a) + (heiby2));
 		pt2xi.x = cvRound(x0 - 1500*(-b) + (wdtby2));
 		pt2xi.y = cvRound(y0 - 1500*(a) + (heiby2));
-		cv::line( cdst, pt1xi, pt2xi, cv::Scalar(0,0,255), 1, CV_AA);
+		cv::line( hlsxi, pt1xi, pt2xi, cv::Scalar(0,0,255), 1, CV_AA);
 	}
-	*/
+
 
 	// Write down the output images:
-	// cv::imwrite("outhls.png",cdst);
+	cv::imwrite("hls_houghlines.png",hlsxi);
 	cv::imwrite("ref_houghlines.png",crefxi);
 
 #endif

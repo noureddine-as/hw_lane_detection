@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Jan 15 00:41:37 2021",
- "timestampMillis": "1610671297460",
+ "dateTimestamp": "Fri Jan 15 02:02:09 2021",
+ "timestampMillis": "1610676129967",
  "buildStep": {
-  "cmdId": "804b1110-bdac-47b4-b82f-476e913795a5",
+  "cmdId": "11ddb96a-dcc9-4565-8ed2-6a578436e846",
   "name": "v++",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel.steps.log",
   "commandLine": "/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src -D__SDA_MEM_MAP__ --config common-config.cfg --config krnl_canny-edgetracing_accel-compile.cfg -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/home/centos/labs/lane_detector_v2/src/build -okrnl_canny.build/edgetracing_accel.xo ../src/xf_edgetracing_accel.cpp ",
@@ -48,10 +48,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:41:37 2021",
- "timestampMillis": "1610671297461",
+ "dateTimestamp": "Fri Jan 15 02:02:09 2021",
+ "timestampMillis": "1610676129967",
  "status": {
-  "cmdId": "804b1110-bdac-47b4-b82f-476e913795a5",
+  "cmdId": "11ddb96a-dcc9-4565-8ed2-6a578436e846",
   "state": "CS_RUNNING"
  }
 }
@@ -59,8 +59,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Jan 15 00:41:52 2021",
- "timestampMillis": "1610671312040",
+ "dateTimestamp": "Fri Jan 15 02:02:24 2021",
+ "timestampMillis": "1610676144732",
  "buildSummary": {
   "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
   "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
@@ -92,10 +92,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jan 15 00:41:52 2021",
- "timestampMillis": "1610671312044",
+ "dateTimestamp": "Fri Jan 15 02:02:24 2021",
+ "timestampMillis": "1610676144736",
  "buildStep": {
-  "cmdId": "42402263-b540-443f-8bda-d765c8f95dff",
+  "cmdId": "0f837445-e252-4ed8-aa32-df1fc924badd",
   "name": "vitis_hls",
   "logFile": "/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/vitis_hls.log",
   "commandLine": "vitis_hls -f /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/edgetracing_accel/edgetracing_accel/edgetracing_accel.tcl -messageDb vitis_hls.pb",
@@ -114,10 +114,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:41:52 2021",
- "timestampMillis": "1610671312045",
+ "dateTimestamp": "Fri Jan 15 02:02:24 2021",
+ "timestampMillis": "1610676144737",
  "status": {
-  "cmdId": "42402263-b540-443f-8bda-d765c8f95dff",
+  "cmdId": "0f837445-e252-4ed8-aa32-df1fc924badd",
   "state": "CS_RUNNING"
  }
 }
@@ -125,10 +125,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:42:54 2021",
- "timestampMillis": "1610671374509",
+ "dateTimestamp": "Fri Jan 15 02:03:28 2021",
+ "timestampMillis": "1610676208755",
  "status": {
-  "cmdId": "42402263-b540-443f-8bda-d765c8f95dff",
+  "cmdId": "0f837445-e252-4ed8-aa32-df1fc924badd",
   "state": "CS_PASSED"
  }
 }
@@ -136,8 +136,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:42:54 2021",
- "timestampMillis": "1610671374518",
+ "dateTimestamp": "Fri Jan 15 02:03:28 2021",
+ "timestampMillis": "1610676208765",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.html",
   "name": "",
@@ -149,8 +149,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jan 15 00:42:54 2021",
- "timestampMillis": "1610671374518",
+ "dateTimestamp": "Fri Jan 15 02:03:28 2021",
+ "timestampMillis": "1610676208766",
  "report": {
   "path": "/home/centos/labs/lane_detector_v2/Emulation-SW/guidance.pb",
   "name": "",
@@ -162,10 +162,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jan 15 00:42:54 2021",
- "timestampMillis": "1610671374519",
+ "dateTimestamp": "Fri Jan 15 02:03:28 2021",
+ "timestampMillis": "1610676208766",
  "status": {
-  "cmdId": "804b1110-bdac-47b4-b82f-476e913795a5",
+  "cmdId": "11ddb96a-dcc9-4565-8ed2-6a578436e846",
   "state": "CS_PASSED"
  }
 }

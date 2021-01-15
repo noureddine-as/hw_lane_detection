@@ -1,1 +1,1 @@
-/opt/Xilinx/Vitis/2020.1/bin/v++ --target sw_emu --link --config common-config.cfg --config krnl_canny-link.cfg -okrnl_canny.xclbin krnl_canny.build/canny_accel.xo krnl_canny.build/edgetracing_accel.xo
+/opt/Xilinx/Vitis/2020.1/bin/v++ --target sw_emu --link --config common-config.cfg --config krnl_canny-link.cfg -okrnl_canny.xclbin krnl_canny.build/canny_accel.xo krnl_canny.build/edgetracing_accel.xo krnl_canny.build/houghlines_accel.xo

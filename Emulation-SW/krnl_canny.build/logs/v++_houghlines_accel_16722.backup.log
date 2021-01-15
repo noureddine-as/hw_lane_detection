@@ -1,0 +1,16 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/reports/houghlines_accel
+	Log files: /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/logs/houghlines_accel
+INFO: [v++ 60-1657] Initializing dispatch client.
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/houghlines_accel.xo.compile_summary, at Fri Jan 15 02:03:41 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Jan 15 02:03:41 2021
+INFO: [v++ 60-895]   Target platform: /home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_aws-vu9p-f1_shell-v04261818_201920_2
+INFO: [v++ 60-242] Creating kernel: 'houghlines_accel'
+INFO: [v++ 60-594] Finished kernel compilation
+ERROR: [v++ 17-70] Application Exception: Failed to add kernel 'houghlines_accel' to XO container because the kernel name '_Z16houghlines_accelP7ap_uintILi8EEssPfS2_ii' defined in kernel.xml does not match.
+
+ERROR: [v++ 60-604] Unable to copy output file krnl_canny.build/houghlines_accel.xo
+INFO: [v++ 60-1653] Closing dispatch client.

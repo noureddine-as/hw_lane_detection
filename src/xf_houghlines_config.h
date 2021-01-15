@@ -22,7 +22,10 @@
 #include "common/xf_common.hpp"
 #include "common/xf_utility.hpp"
 #include "imgproc/xf_houghlines.hpp"
-#include "xf_config_params.h"
+// #include "xf_config_params.h"
+
+#define WIDTH 512
+#define HEIGHT 512
 
 #define HOUGH_THRESHOLD  75
 
@@ -47,7 +50,7 @@
 #define TYPE XF_8UC1
 #define PTR_WIDTH 8
 
-void houghlines_accel(
-    ap_uint<PTR_WIDTH>* img_in, short threshold, short maxlines, float* arrayy, float* arrayx, int rows, int cols);
+// void houghlines_accel(
+//    ap_uint<PTR_WIDTH>* img_in, short threshold, short maxlines, float* arrayy, float* arrayx, int rows, int cols);
 
 #endif // _XF_HOUGHLINES_CONFIG_H_

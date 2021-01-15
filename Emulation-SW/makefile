@@ -37,6 +37,9 @@ ALL_KERNEL_OBJS += krnl_canny.build/canny_accel.xo
 BUILD_SUBDIRS += krnl_canny.build
 KRNL_CANNY_OBJS += krnl_canny.build/edgetracing_accel.xo
 ALL_KERNEL_OBJS += krnl_canny.build/edgetracing_accel.xo
+BUILD_SUBDIRS += krnl_canny.build
+KRNL_CANNY_OBJS += krnl_canny.build/houghlines_accel.xo
+ALL_KERNEL_OBJS += krnl_canny.build/houghlines_accel.xo
 
 ALL_MESSAGE_FILES = $(subst .xo,.mdb,$(ALL_KERNEL_OBJS)) $(subst .xclbin,.mdb,$(BINARY_CONTAINERS))
 
@@ -46,7 +49,6 @@ ALL_MESSAGE_FILES = $(subst .xo,.mdb,$(ALL_KERNEL_OBJS)) $(subst .xclbin,.mdb,$(
 
 HOST_OBJECTS += libs/xf_opencv/ext/xcl2/xcl2.o
 HOST_OBJECTS += src/xf_canny_tb.o
-HOST_OBJECTS += src/xf_houghlines_accel.o
 
 HOST_EXE = lane_detector_v2
 
@@ -100,6 +102,11 @@ krnl_canny.build/edgetracing_accel.xo: ../src/xf_edgetracing_accel.cpp ../src/xf
 	-@$(RM) $@
 	$(VPP) $(VPP_OPTS) --compile -I"$(<D)" -D__SDA_MEM_MAP__ --config common-config.cfg --config krnl_canny-edgetracing_accel-compile.cfg -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/home/centos/labs/lane_detector_v2/src/build -o"$@" "$<"
 
+krnl_canny.build/houghlines_accel.xo: ../src/xf_houghlines_accel.cpp ../src/xf_houghlines_config.h krnl_canny-houghlines_accel-compile.cfg common-config.cfg
+	-@mkdir -p $(@D)
+	-@$(RM) $@
+	$(VPP) $(VPP_OPTS) --compile -I"$(<D)" --config common-config.cfg --config krnl_canny-houghlines_accel-compile.cfg -I/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include -I/home/centos/labs/lane_detector_v2/src/build -o"$@" "$<"
+
 krnl_canny.xclbin: $(KRNL_CANNY_OBJS) krnl_canny-link.cfg common-config.cfg
 	-@echo $(VPP) $(VPP_OPTS) --link --config common-config.cfg --config krnl_canny-link.cfg -o"$@" $(KRNL_CANNY_OBJS) > krnl_canny.xclbin.sh
 	$(VPP) $(VPP_OPTS) --link --config common-config.cfg --config krnl_canny-link.cfg -o"$@" $(KRNL_CANNY_OBJS)
@@ -113,10 +120,6 @@ libs/xf_opencv/ext/xcl2/xcl2.o: ../libs/xf_opencv/ext/xcl2/xcl2.cpp ../libs/xf_o
 	$(HOST_CXX) $(CXXFLAGS) -o "$@" "$<"
 
 src/xf_canny_tb.o: ../src/xf_canny_tb.cpp ../libs/xf_opencv/L1/include/common/xf_headers.hpp ../src/xf_canny_config.h ../src/xf_houghlines_config.h ../libs/xf_opencv/ext/xcl2/xcl2.hpp
-	-@mkdir -p $(@D)
-	$(HOST_CXX) $(CXXFLAGS) -o "$@" "$<"
-
-src/xf_houghlines_accel.o: ../src/xf_houghlines_accel.cpp ../src/xf_houghlines_config.h
 	-@mkdir -p $(@D)
 	$(HOST_CXX) $(CXXFLAGS) -o "$@" "$<"
 

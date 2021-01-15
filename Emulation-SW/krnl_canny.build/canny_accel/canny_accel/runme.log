@@ -10,7 +10,7 @@
 
 source /opt/Xilinx/Vitis/2020.1/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-55-64.ec2.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Jan 15 00:40:29 UTC 2021
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-55-64.ec2.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Fri Jan 15 02:01:00 UTC 2021
 INFO: [HLS 200-10] On os "CentOS Linux release 7.7.1908 (Core)"
 INFO: [HLS 200-10] In directory '/home/centos/labs/lane_detector_v2/Emulation-SW/krnl_canny.build/canny_accel/canny_accel'
 Sourcing Tcl script 'canny_accel.tcl'
@@ -215,8 +215,8 @@ INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 1, 2>::write(int
 INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 1, 2>::write(int, ap_uint<2>)' into 'void xFSuppression3x3<2, 0, 8, 512, 512, 3, 0, 12, 1, 5, 1, 0, 512, 1536, 2>(xf::cv::Mat<2, 512, 512, 1, 2>&, xf::cv::Mat<0, 512, 512, 1, 1536>&, xf::cv::Mat<8, 512, 512, 1, 2>&, unsigned char, unsigned char, unsigned short, unsigned short)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny_utils.hpp:302:0)
 INFO: [HLS 214-178] Inlining function 'xf::cv::Mat<8, 512, 512, 32, 2>::write(int, ap_uint<64>)' into 'void xf::cv::xFPackNMS<8, 8, 512, 512, 12, 12, 1, 32, 0, 20>(xf::cv::Mat<8, 512, 512, 1, 2>&, xf::cv::Mat<8, 512, 512, 32, 2>&, unsigned short, unsigned short)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/imgproc/xf_canny.hpp:91:0)
 INFO: [HLS 214-178] Inlining function 'xf::cv::MMIterOut<64, 8, 512, 512, 32, 2>::xfMat2Array(xf::cv::Mat<8, 512, 512, 32, 2>&, ap_uint<64>*)' into 'void xf::cv::xfMat2Array<64, 8, 512, 512, 32>(xf::cv::Mat<8, 512, 512, 32, 2>&, ap_uint<64>*)' (/home/centos/labs/lane_detector_v2/libs/xf_opencv/L1/include/common/xf_utility.hpp:508:0)
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 114083 ; free virtual = 137726
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 114083 ; free virtual = 137726
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 113364 ; free virtual = 137617
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1530.082 ; gain = 1107.938 ; free physical = 113364 ; free virtual = 137617
 INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
 HLS completed successfully
-INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 15 00:41:34 2021...
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 15 02:02:07 2021...
